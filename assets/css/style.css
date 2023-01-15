@@ -9,3 +9,65 @@
 body {
     font-family: 'Space Mono', monospace;
 }
+
+nav {
+    box-sizing: border-box;
+}
+
+nav button {
+    border: none;
+    padding: 0;
+    font-family: inherit;
+    background: transparent;
+    cursor: pointer;
+    color: inherit;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 72px;
+    padding: 0 20px;
+    background: #19191c;
+    color: #f9f9f9;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 120px;
+}
+
+.navbar-menu {
+    display: flex;
+    transition: 0.3s;
+}
+
+.navbar-menu > button {
+    position: relative;
+    flex: 0 0 36px;
+    padding: 0 20px;
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+    height: 72px;
+    width: 36px;
+    opacity: 0.3;
+}
+
+/* centers the nav menu and adds right margin */
+
+@media only screen and (min-width: 600px) {
+.navbar-menu {
+    flex: 1 1 auto;
+    justify-content: center;
+    margin-right: 120px;
+}
+}

@@ -17,3 +17,15 @@ View the website here (to be added)
 ### User Stories
 
 ### User Goals
+
+#### Client goals:
+
+#### First-Time Visitor Goals:
+
+#### Returning Visitor Goals:
+
+#### Frequent Visitor Goals:
+
+- - - 
+
+## Design
