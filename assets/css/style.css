@@ -53,13 +53,19 @@ nav button {
 .navbar-menu > button {
     position: relative;
     flex: 0 0 36px;
-    padding: 0 20px;
+    padding: 0 26px;
     display: grid;
     place-items: center;
     font-size: 28px;
     height: 72px;
     width: 36px;
     opacity: 0.3;
+    transition: 0.7s;
+}
+
+.navbar-menu > button:hover {
+    color: #FFFF33;
+    opacity: 0.8;
 }
 
 /* centers the nav menu and adds right margin */
