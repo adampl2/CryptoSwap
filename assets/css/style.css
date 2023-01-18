@@ -1,5 +1,6 @@
 /* import the font "Montserrat" from Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&family=Orbitron&family=Space+Mono&display=swap');
+
 
 * {
     margin: 0;
@@ -17,13 +18,13 @@ nav {
 nav button {
     border: none;
     padding: 0;
-    font-family: inherit;
+    font-family: 'Space Mono', monospace;
     background: transparent;
     cursor: pointer;
     color: inherit;
 }
 
-.navbar {
+.navbar1 {
     position: fixed;
     z-index: 1;
     top: 0;
@@ -38,19 +39,21 @@ nav button {
     color: #f9f9f9;
 }
 
-.logo {
+.navlogo {
     display: flex;
     align-items: center;
     gap: 12px;
     width: 120px;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
 }
 
-.navbar-menu {
+.nav-buttons {
     display: flex;
     transition: 0.3s;
 }
 
-.navbar-menu > button {
+.nav-buttons>button {
     position: relative;
     flex: 0 0 36px;
     padding: 0 26px;
@@ -63,17 +66,104 @@ nav button {
     transition: 0.7s;
 }
 
-.navbar-menu > button:hover {
+.nav-buttons>button:hover {
     color: #FFFF33;
     opacity: 0.8;
+}
+
+/* Heading */
+
+.convert-heading {
+    text-align: center;
+    margin-top: 11%;
+    margin-bottom: 30px;
+    width: 100%;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Conversion container */
+
+/* centers the container */
+.main {
+    width: 50vw;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1.4px solid #000000;
+    background: #e5e5e5;
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.searchBox {
+    margin: 3px 1px 10px 1px;
+}
+
+.conv-res-btns>.btn {
+    width: 200px;
+    font-family: 'Space Mono', monospace;
+    background: #19191c;
+    border: none;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.conv-res-btns>.btn:hover {
+    color: #FFFF33;
+    background: #000000;
+}
+
+#finalAmount {
+    font-family: 'Space Mono', monospace;
+    display: none;
+    margin: 50px auto;
+}
+
+#finalAmount h2 {
+    font-size: 50px;
+}
+
+.finalValue {
+    font-family: 'Space Mono', monospace;
 }
 
 /* centers the nav menu and adds right margin */
 
 @media only screen and (min-width: 600px) {
-.navbar-menu {
-    flex: 1 1 auto;
-    justify-content: center;
-    margin-right: 120px;
+    .nav-buttons {
+        flex: 1 1 auto;
+        justify-content: center;
+        margin-right: 120px;
+    }
 }
+
+@media only screen and (max-width: 430px) {
+    .convert-heading {
+        width: 100%;
+        margin-top: 25%;
+        font-size: 28px;
+    }
+
+    .heading {
+        font-size: 60px;
+    }
+
+    #finalAmount h2,
+    .finalValue {
+        font-size: 40px;
+    }
+
+    .btn {
+        width: 36%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        width: 100%;
+    }
 }
