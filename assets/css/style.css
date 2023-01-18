@@ -11,9 +11,13 @@ body {
     font-family: 'Space Mono', monospace;
 }
 
+/* NavBar styling */
+
 nav {
     box-sizing: border-box;
 }
+
+/* Styles the buttons on the navigation menu, sets padding, and font family */
 
 nav button {
     border: none;
@@ -83,9 +87,9 @@ nav button {
 
 /* Conversion container */
 
-/* centers the container */
+/* centers the container and sets its colors */
 .main {
-    width: 50vw;
+    width: 60vw;
     margin: auto;
     padding: 30px;
     border-radius: 5px;
@@ -131,7 +135,59 @@ label {
     font-family: 'Space Mono', monospace;
 }
 
-/* centers the nav menu and adds right margin */
+/* The tabs menu */
+
+.tabs-heading {
+    font-family: 'Space Mono', monospace;
+    margin: 45px 0 35px 0;
+}
+
+[data-tab-info] {
+    display: none;
+}
+
+.active[data-tab-info] {
+    display: block;
+}
+
+.tab-content {
+    display: flex;
+    justify-content: left;
+    font-family: 'Space Mono', monospace;
+    font-weight: normal;
+    border: 1px solid #ccc;
+    width: 60vw;
+    max-width: 60vw;
+    min-width: 60vw;
+    margin: auto;
+}
+
+div > h3 {
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    margin: 20px 2px;
+}
+
+.tabs {
+    width: 60vw;
+    max-width: 60vw;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.tabs span {
+    padding: 6px 10px;
+    border: 1px solid #000000;
+    font-size: 14px;
+    font-family: 'Space Mono', monospace;
+}
+
+.tabs span:hover {
+    cursor: pointer;
+}
+
+/* Centers the nav menu and adds right margin */
 
 @media only screen and (min-width: 600px) {
     .nav-buttons {

@@ -45,13 +45,13 @@
     <h1 class="convert-heading">Convert Your Crypto</h1>
 
     <!-- The form was created thanks to https://www.geeksforgeeks.org/currency-converter-in-javascript/ -->
-    <div class="conversion-container">
+    
         <div class="main">
             <div class="form-group">
                 <label for="oamount">
                     Enter Amount:
                 </label>
-                <input type="text" class="form-control searchBox" placeholder="0.00" id="oamount">
+                <input type="number" class="form-control searchBox" placeholder="0.00" id="oamount">
 
             </div>
             <div class="row">
@@ -106,6 +106,50 @@
                 <span class="finalValue" style="color:green;">
                 </span>
             </h2>
+        </div>
+    <br>
+    <h2 class="tabs-heading d-flex justify-content-center">Learn more about crypto</h2>
+
+    <div class="tabs">
+        <span data-tab-value="#tab_1">BTC</span>
+        <span data-tab-value="#tab_2">ETH</span>
+        <span data-tab-value="#tab_3">BNB</span>
+        <span data-tab-value="#tab_4">XRP</span>
+        <span data-tab-value="#tab_5">ADA</span>
+        <span data-tab-value="#tab_6">LTC</span>
+    </div>
+    <div class="tab-content">
+        <div class="tabs__tab active" id="tab_1" data-tab-info>
+            <h3>Bitcoin</h3>
+            <p>Bitcoin description will be place here.
+                A few paragraphs of information.
+            </p>
+
+        </div>
+        <div class="tabs__tab" id="tab_2" data-tab-info>
+            <h3>Ethereum</h3>
+            <p>Ethereum description</p>
+
+        </div>
+        <div class="tabs__tab" id="tab_3" data-tab-info>
+            <h3>Binance</h3>
+            <p>The Binance coin description</p>
+
+        </div>
+        <div class="tabs__tab" id="tab_4" data-tab-info>
+            <h3>Ripple</h3>
+            <p>The Ripple coin description</p>
+
+        </div>
+        <div class="tabs__tab" id="tab_5" data-tab-info>
+            <h3>Cardano</h3>
+            <p>The Cardano coin description</p>
+
+        </div>
+        <div class="tabs__tab" id="tab_6" data-tab-info>
+            <h3>Litecoin</h3>
+            <p>The Litecoin coin description</p>
+
         </div>
 
     </div>
