@@ -121,17 +121,7 @@ label {
     background: #000000;
 }
 
-#finalAmount {
-    font-family: 'Space Mono', monospace;
-    display: none;
-    margin: 50px auto;
-}
-
-#finalAmount h2 {
-    font-size: 50px;
-}
-
-.finalValue {
+#finalValue {
     font-family: 'Space Mono', monospace;
 }
 
@@ -160,20 +150,26 @@ label {
     max-width: 60vw;
     min-width: 60vw;
     margin: auto;
+    height: 300px;
 }
 
-div > h3 {
+.tabs__tab > h3 {
     font-family: 'Space Mono', monospace;
     font-weight: bold;
-    margin: 20px 2px;
+    margin: 20px 20px;
+}
+
+.tabs__tab > p {
+    font-family: 'Space Mono', monospace;
+    margin: 0 20px;
 }
 
 .tabs {
-    width: 60vw;
-    max-width: 60vw;
+    width: fit-content;
+    margin: 0 auto;
     display: flex;
-    margin: auto;
     justify-content: center;
+    background-color: #f1f1f1
 }
 
 .tabs span {
@@ -181,11 +177,47 @@ div > h3 {
     border: 1px solid #000000;
     font-size: 14px;
     font-family: 'Space Mono', monospace;
+    transition: 0.3s;
 }
 
 .tabs span:hover {
     cursor: pointer;
+    background-color: #ddd;
 }
+
+/* Footer */
+
+footer {
+    background-color: #19191c;
+    color: #fff;
+    margin-top: 66px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    height: 200px;
+  }
+  
+  .footer-column {
+    width: 30%;
+    text-align: center;
+  }
+
+  .footer-element {
+    padding-top: 12px;
+    text-align: left;
+  }
+
+  .footer-element1 {
+    text-align: left;
+    border-bottom: 1.5px solid #fff;
+    font-size: 20px;
+     font-family: 'Space Mono', monospace;
+     width: 60%;
+  }
 
 /* Centers the nav menu and adds right margin */
 
@@ -221,5 +253,13 @@ div > h3 {
 @media (max-width: 768px) {
     .main {
         width: 100%;
+    }
+    .footer-container {
+        flex-wrap: wrap;
+        height: fit-content;
+      }
+      .footer-column {
+        width: 100%;
+        text-align: left;
     }
 }

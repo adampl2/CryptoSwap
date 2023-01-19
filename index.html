@@ -45,68 +45,63 @@
     <h1 class="convert-heading">Convert Your Crypto</h1>
 
     <!-- The form was created thanks to https://www.geeksforgeeks.org/currency-converter-in-javascript/ -->
-    
-        <div class="main">
-            <div class="form-group">
-                <label for="oamount">
-                    Enter Amount:
-                </label>
+
+    <div class="main">
+        <div class="row">
+            <div class="col-md-6">
+                <label for="oamount">Enter Amount:</label>
                 <input type="number" class="form-control searchBox" placeholder="0.00" id="oamount">
-
             </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">From</span>
-                        </div>
-                        <select class="form-control from" id="sel1">
-                            <option value="BTC">BTC</option>
-                            <option value="ETH">ETH</option>
-                            <option value="BNB">BNB</option>
-                            <option value="XRP">XRP</option>
-                            <option value="ADA">ADA</option>
-                            <option value="LTC">LTC</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">To</span>
-                        </div>
-                        <select class="form-control to" id="sel2">
-                            <option value="GBP">GBP</option>
-                            <option value="USD">USD</option>
-                            <option value="EUR">EUR</option>
-                            <option value="PLN">PLN</option>
-                            <option value="JPY">JPY</option>
-                            <option value="CHF">CHF</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="conv-res-btns text-center">
-
-                <!-- convert button -->
-                <button class="btn btn-primary convert m-2" type="submit">
-                    Convert
-                </button>
-
-                <!-- reset button -->
-                <button class="btn btn-primary m-2" onclick="clearVal()">
-                    Reset
-                </button>
+            <div class="col-md-6">
+                <label for="conversion-result">Converted amount:</label>
+                <input type="number" class=" form-control searchBox" id="conversion-result finalValue" disabled>
             </div>
         </div>
-        <div id="finalAmount" class="text-center">
-
-            <!-- Display the converted amount -->
-            <h2>Converted Amount :
-                <span class="finalValue" style="color:green;">
-                </span>
-            </h2>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">From</span>
+                    </div>
+                    <select class="form-control from" id="sel1">
+                        <option value="BTC">BTC</option>
+                        <option value="ETH">ETH</option>
+                        <option value="BNB">BNB</option>
+                        <option value="XRP">XRP</option>
+                        <option value="ADA">ADA</option>
+                        <option value="LTC">LTC</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">To</span>
+                    </div>
+                    <select class="form-control to" id="sel2">
+                        <option value="GBP">GBP</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="PLN">PLN</option>
+                        <option value="JPY">JPY</option>
+                        <option value="CHF">CHF</option>
+                    </select>
+                </div>
+            </div>
         </div>
+        <div class="conv-res-btns text-center">
+
+            <!-- convert button -->
+            <button class="btn btn-primary convert m-2" type="submit">
+                Convert
+            </button>
+
+            <!-- reset button -->
+            <button class="btn btn-primary m-2" onclick="clearVal()">
+                Reset
+            </button>
+        </div>
+    </div>
     <br>
     <h2 class="tabs-heading d-flex justify-content-center">Learn more about crypto</h2>
 
@@ -153,7 +148,26 @@
         </div>
 
     </div>
-
+    <br>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+              <div class="footer-element1 footer-logo">CryptoSwap</div>
+              <div class="footer-element">Element 2</div>
+              <div class="footer-element">Element 3</div>
+            </div>
+            <div class="footer-column">
+              <div class="footer-element1">Education</div>
+              <div class="footer-element">Element 5</div>
+              <div class="footer-element">Element 6</div>
+            </div>
+            <div class="footer-column">
+              <div class="footer-element1">Buy Crypto</div>
+              <div class="footer-element">Element 8</div>
+              <div class="footer-element">Element 9</div>
+            </div>
+          </div>
+    </footer>
 
     <!-- link to JavaScript -->
     <script src="assets/js/converter.js"></script>
