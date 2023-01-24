@@ -10,7 +10,7 @@ View the website here (to be added)
 
 ## Table of contents
 
-* [User Experience](#User-Experience-(UX))
+* [User Experience](#User-Experience-UX)
   * [User Stories](#User-Stories)
 
 * [Design](#Design)
@@ -20,13 +20,10 @@ View the website here (to be added)
   * [Wireframes](#Wireframes)
   * [Features](#Features)
     * [The Home Page](#The-Home-Page)
-    * [The Game Page](#The-Game-Page)
-    * [The High Scores Page](#The-High-Scores-Page)
-    * [The 404 Error Page](#The-404-Error-Page)
     * [Future Implementations](#Future-Implementations)
   * [Accessibility](#Accessibility)
 
-* [Technologies Used](#Technologies-Used)
+* [Technologies Used](#Technology)
   * [Languages Used](#Languages-Used)
   * [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
 
@@ -37,16 +34,14 @@ View the website here (to be added)
     * [How to Clone](#How-to-Clone)
 
 * [Testing](#Testing)
-  * [Solved Bugs](#Solved-Bugs)
-  * [Known Bugs](#Known-Bugs)
+  * [Fixed Bugs](#Fixed-Bugs)
+  * [Test Cases](#test-cases)
   
 * [Credits](#Credits)
-  * [Code Used](#Code-Used)
-  * [Content](#Content)
-  * [Media](#Media)
+  * [Code Used](#code-credits)
   * [Acknowledgments](#Acknowledgments)
 
-## User Experience (UX)
+## User Experience UX
 
 ### Key information for the site:
 
@@ -163,6 +158,10 @@ Wireframes were created for desktop and mobile view. They were made to help me v
 
 ### Features
 
+#### The Home Page
+
+#### Future Implementations
+
 ### Accessibility
 
 It was ensured that the website is accessible and as user-friendly as possible. I have achieved this by: 
@@ -208,7 +207,7 @@ The W3C validator was used to validate the HTML and CSS pages.
 
 ### Fixed Bugs
 
-1. The Fontawesome icons did not render properly when wrappen in an achor (<a>) element. I fixed this by wrapping them in a button instead and utilising JavaScript to make sure each button leads to the correct source. 
+1. The Fontawesome icons did not render properly when wrappen in an achor element. I fixed this by wrapping them in a button instead and utilising JavaScript to make sure each button leads to the correct source. 
 
 ### Test Cases
 
@@ -217,8 +216,6 @@ I have fully tested the website using Google Chrome and Mozilla Firefox on deskt
 It was ensured that through the testing process content was responsive using the Google Developer Tools. 
 
 #### Home page
-
-### Supported Screens and Browsers
 
 - - -
 
