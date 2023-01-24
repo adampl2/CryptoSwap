@@ -153,13 +153,13 @@ label {
     height: 300px;
 }
 
-.tabs__tab > h3 {
+.tabs__tab>h3 {
     font-family: 'Space Mono', monospace;
     font-weight: bold;
     margin: 20px 20px;
 }
 
-.tabs__tab > p {
+.tabs__tab>p {
     font-family: 'Space Mono', monospace;
     margin: 0 20px;
 }
@@ -191,33 +191,37 @@ footer {
     background-color: #19191c;
     color: #fff;
     margin-top: 66px;
-  }
-  
-  .footer-container {
+}
+
+.footer-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 20px 60px;
     height: 200px;
-  }
-  
-  .footer-column {
+}
+
+.footer-column {
     width: 28%;
+    padding-right: 2%;
     text-align: center;
-  }
+    height: 90%;
+}
 
-  .footer-element {
-    padding-top: 12px;
+.footer-element {
+    font-family: 'Space Mono', monospace;
+    padding: 12px 0;
     text-align: left;
-  }
+}
 
-  .footer-element1 {
+.footer-element1 {
     text-align: left;
     border-bottom: 1.5px solid #fff;
     font-size: 20px;
-     font-family: 'Space Mono', monospace;
-     width: 60%;
-  }
+    font-family: 'Space Mono', monospace;
+    width: 60%;
+    font-weight: bolder;
+}
 
 /* Centers the nav menu and adds right margin */
 
@@ -254,11 +258,13 @@ footer {
     .main {
         width: 100%;
     }
+
     .footer-container {
         flex-wrap: wrap;
         height: fit-content;
-      }
-      .footer-column {
+    }
+
+    .footer-column {
         width: 100%;
         text-align: left;
     }
