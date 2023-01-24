@@ -128,7 +128,7 @@ label {
 /* The tabs menu */
 
 .tabs-heading {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Orbitron', sans-serif;
     margin: 45px 0 35px 0;
 }
 
@@ -195,14 +195,14 @@ footer {
   
   .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px 60px;
     height: 200px;
   }
   
   .footer-column {
-    width: 30%;
+    width: 28%;
     text-align: center;
   }
 

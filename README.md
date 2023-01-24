@@ -14,17 +14,82 @@ View the website here (to be added)
 
 ### Key information for the site:
 
+
+   1. Real-time conversion rates for various digital assets, such as Bitcoin, Ethereum, and Litecoin.
+
+   2. The ability to display the converted value in multiple fiat currencies, such as USD, EUR, and GBP.
+
+   3. A "reset" button for users to easily clear the converted amount.
+
+   4. Links to external resources for buying and selling cryptocurrencies, such as exchanges or peer-to-peer platforms.
+
+   5. Data on the total market capitalization of different digital assets, updated in real-time (external source).
+
+   6. Educational resources for users who are new to cryptocurrencies, such as articles or videos (external) that explain how they work and how to safely buy and sell them.
+
+   7. Historical data on the price of different digital assets, allowing users to view trends and make informed decisions.
+
+   8. A user-friendly interface that is easy to navigate and understand.
+
 ### User Stories
+
+   * As a new user, I want to be able to understand how the website works, so that I can easily convert the value of my digital assets.
+
+   * As a frequent user, I want to be able to see the real-time conversion rates of multiple digital assets, so that I can make informed decisions about my investments.
+
+   * As a user who frequently travels, I want to be able to see the converted value of my digital assets in multiple fiat currencies, so that I can understand their value in different countries.
+
+   * As a user who is new to buying and selling cryptocurrencies, I want to be able to access educational resources on the website, so that I can learn more about the process.
+
+   * As a user who is interested in the overall market trends, I want to be able to see the total market capitalization of different digital assets, so that I can understand the bigger picture.
+
+   * As a user who wants to buy or sell cryptocurrencies, I want to be able to access external resources from the website, so that I can find the best platforms to do so.
+
+   * As a user who wants to stay updated on the latest news and trends, I want to be able to access the website's social media profiles, so that I can stay informed.
+
+   * As a user who values convenience, I want to be able to reset the converted amount with a single click, so that I can easily enter new values without having to manually clear the field.
 
 ### User Goals
 
 #### Client goals:
 
+   * To provide an easy-to-use and accurate tool for converting the value of digital assets into fiat currency.
+
+   * To allow the users to easily navigate the website by designing a readable color pallette, intuitive design, and a "Back to Top" button to easily return to the top of the page.  
+
+   * To attract and retain users by providing real-time conversion rates and market capitalization data for multiple digital assets.
+
+   * To educate users who are new to cryptocurrencies by providing access to educational resources and external links.
+
+   * To increase user engagement by providing social media integration and historical data analysis.
+
+   * To provide a secure external platform for users to manage their digital assets and perform transactions.
+
+   * To increase sales and revenue by providing external links to buy and sell cryptocurrencies.
+
+   * To establish trust and credibility by providing a reliable, accurate and up-to-date information to the users.
+
 #### First-Time Visitor Goals:
+
+   * Convert value of a cryptocurrency to fiat currency.
+
+   * Learn the basics of cryptocurrency and blockchain technology through the educational resources provided on the site.
+
+   * Access external resources to buy, view capitalisation, and educate  about crypto.
+
+   * To be able to access CryptoSwap's social media.
+
+   *  To be able to contact CryptoSwap.
 
 #### Returning Visitor Goals:
 
+   * Monitor the real-time value of their digital asset portfolio and track its performance over time.
+
 #### Frequent Visitor Goals:
+
+   * Stay ahead of the market trends by constantly monitoring the real-time value of their digital asset portfolio and tracking its performance over time.
+
+   * Make informed investment decisions by utilizing the site's educational resources, real-time market data, and built-in calculator to evaluate their investment strategy and identify new opportunities.
 
 - - - 
 
@@ -36,9 +101,19 @@ View the website here (to be added)
 
 Google Fonts was used for the following fonts:
 
-* Montserrat was user for all text in the webpage.
+  * Space Mono is used for all text in the webpage, making it the primary font. It's a modern font that provides a clean and legible look for the text, making it easy to read.
+     
+  * Times New Roman is used for label elements, such as form labels, it is a classic font, It is a serif font, which is traditionally used for printed materials and it help to add an extra touch of elegance and sophistication to the page.
+
+  * Orbitron is used for headings, it is a font that is designed to attract attention, it is a sans-serif font with a futuristic feel. This font is used to highlight important information and make it stand out on the page, it helps to create a visual hierarchy by making headings more prominent than the body text.
+
+![main font](docs/mainfont.jpg)
+![headings font](docs/headingsfont.jpg)
+![label font](docs/labelfont.jpg)
 
 ### imagery
+
+No images present.
 
 ### Wireframes
 
