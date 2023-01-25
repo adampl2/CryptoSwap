@@ -184,6 +184,8 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 
 * Google Fonts - To import the fonts used on the website.
 
+* Bootstrap - For style.css.
+
 * Font Awesome - For the iconography on the website.
 
 * Google Dev Tools - Troubleshooting, testing features and solving issues with responsiveness and styling.
