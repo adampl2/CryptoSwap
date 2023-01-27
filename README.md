@@ -133,10 +133,6 @@ View the website here (to be added)
 Google Fonts was used for the following fonts:
 
   * Space Mono is used for all text in the webpage, making it the primary font. It's a modern font that provides a clean and legible look for the text, making it easy to read.
-     
-  * Times New Roman is used for label elements, such as form labels, it is a classic font, It is a serif font, which is traditionally used for printed materials and it help to add an extra touch of elegance and sophistication to the page.
-
-  * Orbitron is used for headings, it is a font that is designed to attract attention, it is a sans-serif font with a futuristic feel. This font is used to highlight important information and make it stand out on the page, it helps to create a visual hierarchy by making headings more prominent than the body text.
 
 ![main font](docs/mainfont.jpg)
 ![headings font](docs/headingsfont.jpg)

@@ -1,5 +1,5 @@
 /* import the font "Montserrat" from Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&family=Orbitron&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Barlow+Condensed&family=Crimson+Text&family=Space+Mono&display=swap');
 
 
 * {
@@ -90,7 +90,7 @@ nav button {
     margin-top: 11%;
     margin-bottom: 30px;
     width: 100%;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 /* Live price container */
@@ -102,13 +102,27 @@ nav button {
     padding: 30px;
     border-radius: 5px;
     border: 1.4px solid #000000;
-    background: #e5e5e5;
+    background: #cecece;
+}
+
+.main h4 {
+    font-family: 'Asap', sans-serif;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 550;
+    padding: 16px 0;
+}
+
+.price {
+    font-family: 'Crimson Text', serif;
+    font-size: 24px;
+    padding-left: 6px;
 }
 
 /* The tabs menu */
 
 .tabs-heading {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     margin: 45px 0 35px 0;
 }
 
