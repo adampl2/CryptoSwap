@@ -191,6 +191,8 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 
 * [loading.io](https://loading.io/) Loading GIF.
 
+* [cryptocoins-icons](https://www.npmjs.com/package/cryptocoins-icons) Crypto Icons.
+
 - - -
 
 ## Testing
