@@ -30,7 +30,8 @@
     <!-- Font Awesome CDN Link -->
     <script src="https://kit.fontawesome.com/c547532770.js" crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Crypto Icons CDN -->
+    <link rel="stylesheet" href="node_modules/cryptocoins-icons/webfont/cryptocoins.css">
 </head>
 
 <body>
@@ -52,26 +53,32 @@
     <div class="main">
         <div class="row">
             <div class="col-md-6">
-                <h4>Ethereum: €<span class="price" id="ethereum"><img class="loading-gif" src="assets/images/loading-gif.gif"></span></h4>
+                <h4><span class="crypto-icons cc ETH"></span>Ethereum: €<span class="price" id="ethereum"><img
+                            class="loading-gif" src="assets/images/loading-gif.gif"></span></h4>
             </div>
             <div class="col-md-6">
-                <h4>Bitcoin: €<span class="price" id="bitcoin"><img class="loading-gif" src="assets/images/loading-gif.gif"></span></h4>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <h4>Binance: €<span class="price" id="binance"><img class="loading-gif" src="assets/images/loading-gif.gif"></span></h4>
-            </div>
-            <div class="col-md-6">
-                <h4>Ripple: €<span class="price" id="ripple"><img class="loading-gif" src="assets/images/loading-gif.gif"></span></h4>
+                <h4><span class="crypto-icons cc BTC"></span>Bitcoin: €<span class="price" id="bitcoin"><img
+                            class="loading-gif" src="assets/images/loading-gif.gif"></span></h4>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <h4>Cardano: €<span class="price" id="cardano"><img class="loading-gif" src="assets/images/loading-gif.gif"></span></h4>
+                <h4><span class="crypto-icons cc BNB"></span>Binance: €<span class="price" id="binance"><img
+                            class="loading-gif" src="assets/images/loading-gif.gif"></span></h4>
             </div>
             <div class="col-md-6">
-                <h4>Litecoin: €<span class="price" id="litecoin"><img class="loading-gif" src="assets/images/loading-gif.gif"></span></h4>
+                <h4><span class="crypto-icons cc XRP"></span>Ripple: €<span class="price" id="ripple"><img
+                            class="loading-gif" src="assets/images/loading-gif.gif"></span></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h4><span class="crypto-icons cc ADA"></span>Cardano: €<span class="price" id="cardano"><img
+                            class="loading-gif" src="assets/images/loading-gif.gif"></span></h4>
+            </div>
+            <div class="col-md-6">
+                <h4><span class="crypto-icons cc LTC"></span>Litecoin: €<span class="price" id="litecoin"><img
+                            class="loading-gif" src="assets/images/loading-gif.gif"></span></h4>
             </div>
         </div>
     </div>
@@ -89,8 +96,19 @@
     <div class="tab-content">
         <div class="tabs__tab active" id="tab_1" data-tab-info>
             <h3>Bitcoin</h3>
-            <p>Bitcoin description will be place here.
-                A few paragraphs of information.
+            <p>Bitcoin is a decentralized digital currency that was created in 2009 by an unknown individual or group of
+                people using the pseudonym Satoshi Nakamoto. It allows for peer-to-peer transactions without the need
+                for intermediaries such as banks. Transactions are verified by network nodes through cryptography and
+                recorded in a public distributed ledger called a blockchain. Bitcoin is unique in that there is a finite
+                supply of them - 21 million - and they are created through a process called mining.
+            </p>
+            <br>
+            <p>
+                In the early days, it was mostly used by tech enthusiasts and libertarians who saw it as a way to bypass
+                traditional financial systems. However, over time it has gained mainstream acceptance and is now widely
+                used and accepted as a form of payment for goods and services. Despite some volatility, the value of
+                Bitcoin has risen dramatically since its creation, leading it to be considered as a potential store of
+                value or digital gold.
             </p>
 
         </div>
@@ -125,21 +143,21 @@
     <footer>
         <div class="footer-container">
             <div class="footer-column">
-              <div class="footer-element1 footer-logo">CryptoSwap</div>
-              <div class="footer-element">10 Bayfront Ave,<br> Singapore 018956</div>
-              <div class="footer-element">cryptoswap@yahoo.com</div>
+                <div class="footer-element1 footer-logo">CryptoSwap</div>
+                <div class="footer-element">10 Bayfront Ave,<br> Singapore 018956</div>
+                <div class="footer-element">cryptoswap@yahoo.com</div>
             </div>
             <div class="footer-column">
-              <div class="footer-element1">Education</div>
-              <div class="footer-element">Element 5</div>
-              <div class="footer-element">Element 6</div>
+                <div class="footer-element1">Education</div>
+                <div class="footer-element">Element 5</div>
+                <div class="footer-element">Element 6</div>
             </div>
             <div class="footer-column">
-              <div class="footer-element1">Buy Crypto</div>
-              <div class="footer-element">Element 8</div>
-              <div class="footer-element">Element 9</div>
+                <div class="footer-element1">Buy Crypto</div>
+                <div class="footer-element">Element 8</div>
+                <div class="footer-element">Element 9</div>
             </div>
-          </div>
+        </div>
     </footer>
 
     <!-- link to JavaScript -->

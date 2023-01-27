@@ -9,19 +9,48 @@ let ltc = document.getElementById("litecoin");
 
 let lastPrice = null;
 
+// Stores the currency pairs to avoid calling the handlePrice 6 times.
+
+let cryptoArray = [{
+    abr: "etheur",
+    crypto: eth
+  },
+  {
+    abr: "btceur",
+    crypto: btc
+  },
+  {
+    abr: "bnbeur",
+    crypto: bnb
+  },
+  {
+    abr: "xrpeur",
+    crypto: xrp
+  },
+  {
+    abr: "adaeur",
+    crypto: ada
+  },
+  {
+    abr: "ltceur",
+    crypto: ltc
+  }
+];
+
 /* Function below: 
 1. Gets data from 
 https://github.com/binance/binance-spot-api-docs/blob/master/web-socket-streams.md 
 to access live price of crypto in euros.
 2. Logs to the console if a connection has been established using "onopen" property.
-2. parses JSON into an object 
-3. Converts a string into floating-point number and returns a string representin a number in
+3. parses JSON into an object 
+4. Converts a string into floating-point number and returns a string representin a number in
 fixed-point notation.
-4. Assigns "eth" (or other crypto) variable to price.
-5. Changes color to green when price increases and to red if it decreases.
+5. Assigns "eth" (or other crypto) variable to price.
+6. Changes color to green when price increases and to red if it decreases.
+7. Returns error message when one is encauntered both in the console and to inform user.
 */
 
-// Many thanks to https://www.youtube.com/watch?v=XXuUNZIQUVA for providing correct code for importing websockets.
+// Many thanks and credits to https://www.youtube.com/watch?v=XXuUNZIQUVA for providing correct code for importing websockets.
 
 function handlePrice(abr, crypto) {
   let ws = new WebSocket(`wss://stream.binance.com:9443/ws/${abr}@trade`);
@@ -41,18 +70,15 @@ function handlePrice(abr, crypto) {
 
   ws.onclose = (event) => {
     console.error(`WebSocket connection for ${abr} closed. Reason: ${event.reason}`);
-    crypto.innerText = "Error, please try again later";
+    crypto.innerText = `Error, connection closed ${event.reason}`;
   };
 
   ws.onerror = (error) => {
     console.error(`WebSocket error for ${abr}: ${error.message}`);
-    crypto.innerText = "Error, please try again later";
+    crypto.innerText = `Error: ${error.message}`;
   };
 }
 
-handlePrice("etheur", eth);
-handlePrice("btceur", btc);
-handlePrice("bnbeur", bnb);
-handlePrice("xrpeur", xrp);
-handlePrice("adaeur", ada);
-handlePrice("ltceur", ltc);
+// Iterates the cryptoArray and calls the handlePrice function
+
+cryptoArray.forEach(({abr, crypto}) => handlePrice(abr, crypto));

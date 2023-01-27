@@ -7,10 +7,6 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Space Mono', monospace;
-}
-
 /* GIF styling */
 
 .loading-gif {
@@ -91,6 +87,9 @@ nav button {
     margin-bottom: 30px;
     width: 100%;
     font-family: 'Barlow Condensed', sans-serif;
+    font-size: 50px;
+    text-transform: capitalize;
+    word-spacing: 5px;
 }
 
 /* Live price container */
@@ -102,7 +101,7 @@ nav button {
     padding: 30px;
     border-radius: 5px;
     border: 1.4px solid #000000;
-    background: #cecece;
+    background: #a0a0a0;
 }
 
 .main h4 {
@@ -117,6 +116,19 @@ nav button {
     font-family: 'Crimson Text', serif;
     font-size: 24px;
     padding-left: 6px;
+}
+
+.crypto-icons {
+    padding-right: 6px;
+    background: transparent;
+    color: #00028e;
+    transition: 0.6s;
+}
+
+.crypto-icons:hover {
+    color: #d8d825;
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 /* The tabs menu */
@@ -144,7 +156,7 @@ nav button {
     max-width: 60vw;
     min-width: 60vw;
     margin: auto;
-    height: 300px;
+    height: auto;
 }
 
 .tabs__tab>h3 {
@@ -156,6 +168,9 @@ nav button {
 .tabs__tab>p {
     font-family: 'Space Mono', monospace;
     margin: 0 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
 }
 
 .tabs {
