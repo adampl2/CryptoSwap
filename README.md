@@ -193,6 +193,8 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 * [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
 * [Favicon.io](https://favicon.io/) To create favicon.
 
+* [loading.io](https://loading.io/) Loading GIF.
+
 - - -
 
 ## Testing

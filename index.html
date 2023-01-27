@@ -52,57 +52,27 @@
     <div class="main">
         <div class="row">
             <div class="col-md-6">
-                <label for="enter-amount">Ethereum: €<span id="ethereum"></span></label>
-                <input type="number" class="form-control searchBox" placeholder="0.00" id="enter-amount">
+                <h4>Ethereum: €<span id="ethereum"><img class="loading-gif" src="assets/images/loading-gif.gif"></span></h4>
             </div>
             <div class="col-md-6">
-                <label for="conversion-result">Bitcoin: €<span id="bitcoin"></span></label>
-                <input type="number" class=" form-control searchBox" id="conversion-result" value="">
+                <h4>Bitcoin: €<span id="bitcoin"><img class="loading-gif" src="assets/images/loading-gif.gif"></span></h4>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">From</span>
-                    </div>
-                    <select class="form-control from" id="from-crypto">
-                        <option value="BTC">BTC</option>
-                        <option value="ETH">ETH</option>
-                        <option value="BNB">BNB</option>
-                        <option value="XRP">XRP</option>
-                        <option value="ADA">ADA</option>
-                        <option value="LTC">LTC</option>
-                    </select>
-                </div>
+            <div class="col-md-6">
+                <h4>Binance: €<span id="binance"><img class="loading-gif" src="assets/images/loading-gif.gif"></span></h4>
             </div>
-            <div class="col-sm-6">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">To</span>
-                    </div>
-                    <select class="form-control to" id="to-fiat">
-                        <option value="GBP">GBP</option>
-                        <option value="USD">USD</option>
-                        <option value="EUR">EUR</option>
-                        <option value="PLN">PLN</option>
-                        <option value="JPY">JPY</option>
-                        <option value="CHF">CHF</option>
-                    </select>
-                </div>
+            <div class="col-md-6">
+                <h4>Ripple: €<span id="ripple"><img class="loading-gif" src="assets/images/loading-gif.gif"></span></h4>
             </div>
         </div>
-        <div class="conv-res-btns text-center">
-
-            <!-- convert button -->
-            <button class="btn btn-primary convert m-2" type="submit">
-                Convert
-            </button>
-
-            <!-- reset button -->
-            <button class="btn btn-primary m-2" onclick="clearVal()">
-                Reset
-            </button>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Cardano: €<span id="cardano"><img class="loading-gif" src="assets/images/loading-gif.gif"></span></h4>
+            </div>
+            <div class="col-md-6">
+                <h4>Litecoin: €<span id="litecoin"><img class="loading-gif" src="assets/images/loading-gif.gif"></span></h4>
+            </div>
         </div>
     </div>
     <br>

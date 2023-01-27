@@ -11,6 +11,14 @@ body {
     font-family: 'Space Mono', monospace;
 }
 
+/* GIF styling */
+
+.loading-gif {
+    width: 26px;
+    height: 20px;
+    padding-left: 10px;
+}
+
 /* NavBar styling */
 
 nav {
@@ -85,7 +93,7 @@ nav button {
     font-family: 'Orbitron', sans-serif;
 }
 
-/* Conversion container */
+/* Live price container */
 
 /* centers the container and sets its colors */
 .main {
@@ -95,34 +103,6 @@ nav button {
     border-radius: 5px;
     border: 1.4px solid #000000;
     background: #e5e5e5;
-}
-
-label {
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.searchBox {
-    margin: 3px 1px 10px 1px;
-}
-
-.conv-res-btns>.btn {
-    width: 200px;
-    font-family: 'Space Mono', monospace;
-    background: #19191c;
-    border: none;
-    font-weight: normal;
-    text-transform: uppercase;
-    transition: 0.4s;
-}
-
-.conv-res-btns>.btn:hover {
-    color: #FFFF33;
-    background: #000000;
-}
-
-#conversion-result {
-    font-family: 'Space Mono', monospace;
 }
 
 /* The tabs menu */
