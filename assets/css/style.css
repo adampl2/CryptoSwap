@@ -97,7 +97,7 @@ nav button {
 /* centers the container and sets its colors */
 .main {
     text-align: center;
-    width: 60vw;
+    width: 80%;
     margin: auto;
     padding: 30px;
     border-radius: 5px;
@@ -152,14 +152,10 @@ nav button {
 
 .tab-content {
     background: #FFFDE6;
-    display: flex;
-    justify-content: left;
     border: 1px solid #ffffff;
     border-radius: 6px;
-    width: 60vw;
-    max-width: 60vw;
-    min-width: 60vw;
-    margin: auto;
+    width: 80%;
+    margin: 30px auto;
     height: auto;
 }
 
@@ -250,28 +246,47 @@ footer {
 }
 
 @media only screen and (max-width: 430px) {
+
+    .main {
+        width: 85%;
+        padding: 0;
+    }
+
+    .tabs-heading {
+        margin: 60px 0 40px 0;
+    }
+
+    .tab-content {
+        width: 85%;
+    }
+
     .convert-heading {
         width: 100%;
         margin-top: 25%;
         font-size: 28px;
     }
 
-    .heading {
-        font-size: 60px;
+    .footer-container {
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: left;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 430px) {
     .main {
         padding: 0;
         margin: 1px auto;
-        width: 100%;
+        width: 60%;
     }
 
-    .main .row .col-md-6 {
-        width: 100%;
-        margin: auto;
-        padding: 0;
+    .main h4 {
+        padding: 16px 16px;
+        text-align: left;
     }
 
     .footer-container {
