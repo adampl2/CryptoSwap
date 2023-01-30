@@ -1,138 +1,107 @@
-# CryptoSwap 
+# CryptoSwap
 
-CryptoSwap is a cryptocurrency converter that allows users to easily convert popular digital currencies such as Bitcoin, Ethereum, and Litecoin into fiat currencies like USD, EUR, and GBP. The user-friendly interface makes it simple for anyone to quickly calculate the value of their digital assets. CryptoSwap is a project as part of the milestone project 2 for Code Institute, developed by a student with a passion for the rapidly growing world of cryptocurrency.
+Stay informed on cryptocurrency trends with CryptoSwap, a simple platform for live pricing information. View up-to-date values for six popular cryptocurrencies, displayed in euros for ease of use.
+
+Developed as part of a milestone project 2 for Code Institute, CryptoSwap offers a compact resource for crypto enthusiasts and those looking to learn more. Get a glimpse into the dynamic world of cryptocurrency with CryptoSwap.
 
 (Add multidevice screenshot here)
 
-## Demo
-
-View the website here (to be added)
+[View the deployed website here](https://adampl2.github.io/CryptoSwap/)
 
 ## Table of contents
 
-* [User Experience](#User-Experience-UX)
-  * [User Stories](#User-Stories)
+* [`User Experience`](#User-Experience-UX)
+  * [`User Stories`](#User-Stories)
 
-* [Design](#Design)
-  * [Colour Scheme](#Colour-Scheme)
-  * [Typography](#Typography)
-  * [Imagery](#Imagery)
-  * [Wireframes](#Wireframes)
-  * [Features](#Features)
-    * [The Home Page](#The-Home-Page)
-    * [Future Implementations](#Future-Implementations)
-  * [Accessibility](#Accessibility)
+* [`Design`](#Design)
+  * [`Colour Scheme`](#Colour-Scheme)
+  * [`Typography`](#Typography)
+  * [`Imagery`](#Imagery)
+  * [`Wireframes`](#Wireframes)
+  * [`Features`](#Features)
+    * [`The Home Page`](#The-Home-Page)
+    * [`Future Implementations`](#Future-Implementations)
+  * [`Accessibility`](#Accessibility)
 
-* [Technologies Used](#Technology)
-  * [Languages Used](#Languages-Used)
-  * [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
+* [`Technologies Used`](#Technology)
+  * [`Languages Used`](#Languages-Used)
+  * [`Frameworks, Libraries & Programs Used`](#Frameworks,-Libraries-&-Programs-Used)
 
-* [Deployment & Local Development](#Deployment-&-Local-Development)
-  * [Deployment](#Deployment)
-  * [Local Development](#Local-Development)
-    * [How to Fork](#How-to-Fork)
-    * [How to Clone](#How-to-Clone)
+* [`Deployment & Local Development`](#Deployment-&-Local-Development)
+  * [`Deployment`](#Deployment)
+  * [`Local Development`](#Local-Development)
+    * [`How to Fork`](#How-to-Fork)
+    * [`How to Clone`](#How-to-Clone)
 
-* [Testing](#Testing)
-  * [Fixed Bugs](#Fixed-Bugs)
-  * [Test Cases](#test-cases)
+* [`Testing`](#Testing)
+  * [`Fixed Bugs`](#Fixed-Bugs)
+  * [`Test Cases`](#test-cases)
   
-* [Credits](#Credits)
-  * [Code Used](#code-credits)
-  * [Acknowledgments](#Acknowledgments)
+* [`Credits`](#Credits)
+  * [`Code Used`](#code-credits)
+  * [`Acknowledgments`](#Acknowledgements)
 
 ## User Experience UX
 
-### Key information for the site:
+### Key information for the site
 
+1. Live cryptocurrency pricing: Display real-time values for 6 popular cryptocurrencies (BTC, ETH, BNB, XRP, ADA, and LTC) in euros (EUR)
 
-   1. Real-time conversion rates for various digital assets, such as Bitcoin, Ethereum, and Litecoin.
+2. Educational resources: Provide information and resources to educate users about the blockchain and crypto in general.
 
-   2. The ability to display the converted value in multiple fiat currencies, such as USD, EUR, and GBP.
+3. User-friendly interface: Offer an easy-to-use interface for users to view cryptocurrency prices and access educational content.
 
-   3. A "reset" button for users to easily clear the converted amount.
+4. External sources: Allow users to access external sources for buying cryptocurrency, viewing CoinMarketCap, and reading CoinDesk news.
 
-   4. Links to external resources for buying and selling cryptocurrencies, such as exchanges or peer-to-peer platforms.
-
-   5. Data on the total market capitalization of different digital assets, updated in real-time (external source).
-
-   6. Educational resources for users who are new to cryptocurrencies, such as articles or videos (external) that explain how they work and how to safely buy and sell them.
-
-   7. Historical data on the price of different digital assets, allowing users to view trends and make informed decisions.
-
-   8. A user-friendly interface that is easy to navigate and understand.
+5. Contact us: Provide a way for users to reach out with questions or feedback through an email address and physical address.
 
 ### User Stories
 
-   * As a new user, I want to be able to understand how the website works, so that I can easily convert the value of my digital assets.
+  1. First-time user: As a newcomer to the crypto world, I want a user-friendly platform that provides live pricing information and educational resources so that I can learn about cryptocurrency and track market trends.
 
-   * As a frequent user, I want to be able to see the real-time conversion rates of multiple digital assets, so that I can make informed decisions about my investments.
-
-   * As a user who frequently travels, I want to be able to see the converted value of my digital assets in multiple fiat currencies, so that I can understand their value in different countries.
-
-   * As a user who is new to buying and selling cryptocurrencies, I want to be able to access educational resources on the website, so that I can learn more about the process.
-
-   * As a user who is interested in the overall market trends, I want to be able to see the total market capitalization of different digital assets, so that I can understand the bigger picture.
-
-   * As a user who wants to buy or sell cryptocurrencies, I want to be able to access external resources from the website, so that I can find the best platforms to do so.
-
-   * As a user who wants to stay updated on the latest news and trends, I want to be able to access the website's social media profiles, so that I can stay informed.
-
-   * As a user who values convenience, I want to be able to reset the converted amount with a single click, so that I can easily enter new values without having to manually clear the field.
+  2. Returning user: As a regular user of the website, I want to be able to easily access live pricing information, external sources, and news updates so that I can stay informed and make informed decisions about my investments. I also want to have the ability to contact the team for support if needed.
 
 ### User Goals
 
-#### Client goals:
+#### Client goals
 
-   * To provide an easy-to-use and accurate tool for converting the value of digital assets into fiat currency.
+1. Access to real-time pricing information: The client wants to be able to view live prices of popular cryptocurrencies in euros to track market trends and make informed investment decisions.
 
-   * To allow the users to easily navigate the website by designing a readable color pallette, intuitive design, and a "Back to Top" button to easily return to the top of the page.  
+2. Educational resources: The client wants to have access to educational resources and information about the blockchain and crypto in general to expand their knowledge and stay informed.
 
-   * To attract and retain users by providing real-time conversion rates and market capitalization data for multiple digital assets.
+3. Convenient and user-friendly platform: The client wants a user-friendly platform that offers a comprehensive and convenient one-stop destination for all things cryptocurrency, including external sources for buying, CoinMarketCap, CoinDesk news, and a way to contact the team for support.
 
-   * To educate users who are new to cryptocurrencies by providing access to educational resources and external links.
+#### First-Time Visitor Goals
 
-   * To increase user engagement by providing social media integration and historical data analysis.
+   1. Understanding of cryptocurrency: The first-time user wants to gain a basic understanding of cryptocurrency and the blockchain through educational resources and information provided on the website.
 
-   * To provide a secure external platform for users to manage their digital assets and perform transactions.
+   2. Live pricing information: The first-time user wants to be able to view live prices of popular cryptocurrencies in euros to stay informed on market trends and make informed investment decisions.
 
-   * To increase sales and revenue by providing external links to buy and sell cryptocurrencies.
+   3. User-friendly platform: The first-time user wants a user-friendly platform that is easy to navigate and understand, allowing them to quickly access the information and resources they need to learn about cryptocurrency
 
-   * To establish trust and credibility by providing a reliable, accurate and up-to-date information to the users.
+#### Returning Visitor Goals
 
-#### First-Time Visitor Goals:
+   1. Quick access to updated information: The returning visitor wants to easily access updated live pricing information and news updates to stay informed on market trends and make informed investment decisions.
 
-   * Convert value of a cryptocurrency to fiat currency.
+   2. Convenient access to all resources: The returning visitor wants a comprehensive and convenient platform that provides access to all necessary information, including external sources for buying, CoinMarketCap, CoinDesk news, and a way to contact the team for support. The returning visitor wants the platform to be user-friendly and easy to navigate, allowing them to quickly access the information and resources they need.
 
-   * Learn the basics of cryptocurrency and blockchain technology through the educational resources provided on the site.
+#### Frequent Visitor Goals
 
-   * Access external resources to buy, view capitalisation, and educate  about crypto.
+   1. Timely access to market updates: The frequent visitor wants quick access to updated live pricing information and news updates so that they can stay informed on market trends and make informed investment decisions.
 
-   * To be able to access CryptoSwap's social media.
+   2. Efficient use of platform: The frequent visitor wants a platform that is user-friendly and efficient, allowing them to quickly access the information and resources they need, including live pricing information, educational resources, external sources, CoinMarketCap, CoinDesk news, and a way to contact the team for support. The frequent visitor wants the platform to be easy to navigate and understand, allowing them to make the most of their time.
 
-   *  To be able to contact CryptoSwap.
-
-#### Returning Visitor Goals:
-
-   * Monitor the real-time value of their digital asset portfolio and track its performance over time.
-
-#### Frequent Visitor Goals:
-
-   * Stay ahead of the market trends by constantly monitoring the real-time value of their digital asset portfolio and tracking its performance over time.
-
-   * Make informed investment decisions by utilizing the site's educational resources, real-time market data, and built-in calculator to evaluate their investment strategy and identify new opportunities.
-
-- - - 
+- - -
 
 ## Design
 
 ### Colour Scheme
 
-### Typography 
+### Typography
 
 Google Fonts was used for the following fonts:
 
-  * Space Mono is used for all text in the webpage, making it the primary font. It's a modern font that provides a clean and legible look for the text, making it easy to read.
+* Space Mono is used for all text in the webpage, making it the primary font. It's a modern font that provides a clean and legible look for the text, making it easy to read.
 
 ![main font](docs/mainfont.jpg)
 ![headings font](docs/headingsfont.jpg)
@@ -144,13 +113,13 @@ No images present.
 
 ### Wireframes
 
-Wireframes were created for desktop and mobile view. They were made to help me visualise the layout of the website before it was finished and make any tweaks easier. 
+Wireframes were created for desktop and mobile view. They were made to help me visualise the layout of the website before it was finished and make any tweaks easier.
 
-- Desktop
-  - Navbar + converter - [View](docs/wireframes/Desktop%201.jpg)
-  - Content + footer - [View](docs/wireframes/Desktop%202.jpg)
-- Mobile
-  - The whole page on iPhone 14 plus - [View](docs/wireframes/mobile-wireframes.jpg)
+* Desktop
+  * Navbar + converter - [View](docs/wireframes/Desktop%201.jpg)
+  * Content + footer - [View](docs/wireframes/Desktop%202.jpg)
+* Mobile
+  * The whole page on iPhone 14 plus - [View](docs/wireframes/mobile-wireframes.jpg)
 
 ### Features
 
@@ -160,7 +129,7 @@ Wireframes were created for desktop and mobile view. They were made to help me v
 
 ### Accessibility
 
-It was ensured that the website is accessible and as user-friendly as possible. I have achieved this by: 
+It was ensured that the website is accessible and as user-friendly as possible. I have achieved this by:
 
 - - -
 
@@ -197,7 +166,7 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 
 ## Testing
 
-Testing progressed at every stage of this project. This ensured that most issues were fixed before the website was finished. Chrome DevTools were utilised when building the website to help with troubleshooting as the website transformed. 
+Testing progressed at every stage of this project. This ensured that most issues were fixed before the website was finished. Chrome DevTools were utilised when building the website to help with troubleshooting as the website transformed.
 
 The following issues were raised during my project meeting with my mentor:
 
@@ -209,13 +178,13 @@ The W3C validator was used to validate the HTML and CSS pages.
 
 ### Fixed Bugs
 
-1. The Fontawesome icons did not render properly when wrappen in an achor element. I fixed this by wrapping them in a button instead and utilising JavaScript to make sure each button leads to the correct source. 
+1. The Fontawesome icons did not render properly when wrappen in an achor element. I fixed this by wrapping them in a button instead and utilising JavaScript to make sure each button leads to the correct source.
 
 ### Test Cases
 
-I have fully tested the website using Google Chrome and Mozilla Firefox on desktop (HP Pavilion Convertible 14 inch) and mobile (Samsung Note9). 
+I have fully tested the website using Google Chrome and Mozilla Firefox on desktop (HP Pavilion Convertible 14 inch) and mobile (Samsung Note9).
 
-It was ensured that through the testing process content was responsive using the Google Developer Tools. 
+It was ensured that through the testing process content was responsive using the Google Developer Tools.
 
 #### Home page
 
