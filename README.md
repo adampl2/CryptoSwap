@@ -25,7 +25,7 @@ Developed as part of a milestone project 2 for Code Institute, CryptoSwap offers
 
 * [`Technologies Used`](#Technology)
   * [`Languages Used`](#Languages-Used)
-  * [`Frameworks, Libraries & Programs Used`](#Frameworks,-Libraries-&-Programs-Used)
+  * [`Frameworks, Libraries & Programs Used`](#Frameworks-&-Programs-Used)
 
 * [`Deployment & Local Development`](#Deployment-&-Local-Development)
   * [`Deployment`](#Deployment)
@@ -103,9 +103,7 @@ Google Fonts was used for the following fonts:
 
 * Space Mono is used for all text in the webpage, making it the primary font. It's a modern font that provides a clean and legible look for the text, making it easy to read.
 
-![main font](docs/mainfont.jpg)
-![headings font](docs/headingsfont.jpg)
-![label font](docs/labelfont.jpg)
+![main font]()
 
 ### imagery
 
@@ -139,28 +137,29 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 
  HTML, CSS and JavaScript were used for this project.
 
-### Frameworks, Libraries & Programs Used
+### Frameworks & Programs Used
 
-* Figma - Wireframes.
+* [Figma](https://www.figma.com/) For wireframes.
 
-* Git - Version control.
+* [Git](https://git-scm.com/) As version control.
 
-* GitHub - To save and store the files for the website.
+* [GitHub](https://github.com/) To save and store the files for the website.
 
-* Google Fonts - To import the fonts used on the website.
+* [Google Fonts](https://fonts.google.com/) To import the fonts used on the website.
 
-* Bootstrap - For style.css.
+* [Bootstrap](https://getbootstrap.com/) For style.css.
 
-* Font Awesome - For the iconography on the website.
+* [Font Awesome](https://fontawesome.com/) For the iconography on the website.
 
-* Google Dev Tools - Troubleshooting, testing features and solving issues with responsiveness and styling.
+* [Google Dev Tools](https://developer.chrome.com/docs/devtools/) For troubleshooting, testing features and solving issues with responsiveness and styling.
 
 * [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
+
 * [Favicon.io](https://favicon.io/) To create favicon.
 
-* [loading.io](https://loading.io/) Loading GIF.
+* [loading.io](https://loading.io/) To create loading GIF.
 
-* [cryptocoins-icons](https://www.npmjs.com/package/cryptocoins-icons) Crypto Icons.
+* [cryptocoins-icons](https://www.npmjs.com/package/cryptocoins-icons) To generate Crypto Icons.
 
 - - -
 
@@ -234,3 +233,5 @@ Clone the CryptoSwap repository:
 - - -
 
 ## Acknowledgements
+
+* [Rohit Sharma](https://github.com/rohit0286) - My Code Institute mentor.
