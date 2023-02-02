@@ -229,6 +229,8 @@ Clone the CryptoSwap repository:
 ### Code Credits
 
 * [HopeUI](https://www.instagram.com/hopeui.io/) - NavBar and its responsiveness.
+* [W3schools](https://www.w3schools.com/howto/howto_js_tabs.asp) - Tabs to display different content on click event.
+* [W3schools](https://www.w3schools.com/howto/howto_js_read_more.asp) - Read more button function.
 
 - - -
 
