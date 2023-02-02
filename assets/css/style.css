@@ -157,17 +157,16 @@ nav button {
     width: 80%;
     margin: 30px auto;
     height: auto;
+    padding: 24px;
 }
 
 .tabs__tab>h3 {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: bold;
-    margin: 20px 24px;
 }
 
 .tabs__tab>p {
     font-family: 'IBM Plex Sans', sans-serif;
-    margin: 0 24px 24px 24px;
     font-size: 1rem;
     line-height: 1.5;
     color: #333;
@@ -197,6 +196,30 @@ nav button {
     background-color: #ddd;
 }
 
+.read-more-button {
+    display: block;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    background: #FFFDE6;
+    border: none;
+    padding-top: 10px;
+    transition: 0.6s;
+}
+
+.read-more-button:hover {
+    opacity: 0.6;
+}
+
+.hidden-text {
+    display: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
 /* Footer */
 
 footer {
@@ -209,25 +232,26 @@ footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 20px 60px;
+    padding: 20px 30px;
     height: 200px;
 }
 
 .footer-column {
     width: 30%;
-    padding-right: 2%;
     text-align: center;
     height: 90%;
 }
 
 .footer-column:last-child {
-    width: 10%;
+    position: relative;
+    bottom: 0;
+    width: 20%;
     padding: 0;
+    height: 25px;
+    margin-top: auto;
 }
 
 .footer-icons {
-    display: inline;
-    padding-top: 100%;
     margin: 0 5px;
     transition: 0.5s;
 }
@@ -246,19 +270,19 @@ footer {
     border-bottom: 1.5px solid #ddd;
     font-size: 1.3rem;
     font-family: 'IBM Plex Sans', sans-serif;
-    width: 60%;
+    width: 90%;
     font-weight: bolder;
     text-transform: uppercase;
 }
 
-.footer-element > a {
+.footer-element>a {
     font-family: 'IBM Plex Sans', sans-serif;
     text-decoration: none;
     color: #ddd;
     transition: 0.7s;
 }
 
-.footer-element > a:hover {
+.footer-element>a:hover {
     opacity: 0.5;
 }
 
@@ -302,6 +326,14 @@ footer {
         width: 100%;
         text-align: left;
     }
+
+    .footer-column:last-child {
+        display: inline-flex;
+        flex-direction: row-reverse;
+        height: inherit;
+        width: 100%;
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 768px) and (min-width: 430px) {
@@ -324,5 +356,13 @@ footer {
     .footer-column {
         width: 100%;
         text-align: left;
+    }
+
+    .footer-column:last-child {
+        display: inline-flex;
+        flex-direction: row-reverse;
+        height: inherit;
+        width: 100%;
+        margin-top: 20px;
     }
 }
