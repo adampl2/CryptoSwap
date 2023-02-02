@@ -214,25 +214,52 @@ footer {
 }
 
 .footer-column {
-    width: 28%;
+    width: 30%;
     padding-right: 2%;
     text-align: center;
     height: 90%;
 }
 
+.footer-column:last-child {
+    width: 10%;
+    padding: 0;
+}
+
+.footer-icons {
+    display: inline;
+    padding-top: 100%;
+    margin: 0 5px;
+    transition: 0.5s;
+}
+
+.footer-icons:hover {
+    opacity: 0.5;
+}
+
 .footer-element {
-    font-family: 'Space Mono', monospace;
     padding: 12px 0;
     text-align: left;
 }
 
 .footer-element1 {
     text-align: left;
-    border-bottom: 1.5px solid #fff;
+    border-bottom: 1.5px solid #ddd;
     font-size: 1.3rem;
     font-family: 'IBM Plex Sans', sans-serif;
     width: 60%;
     font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.footer-element > a {
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-decoration: none;
+    color: #ddd;
+    transition: 0.7s;
+}
+
+.footer-element > a:hover {
+    opacity: 0.5;
 }
 
 /* Centers the nav menu and adds right margin */
