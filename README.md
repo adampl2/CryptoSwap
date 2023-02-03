@@ -101,9 +101,11 @@ Developed as part of a milestone project 2 for Code Institute, CryptoSwap offers
 
 Google Fonts was used for the following fonts:
 
-* Space Mono is used for all text in the webpage, making it the primary font. It's a modern font that provides a clean and legible look for the text, making it easy to read.
+* **IBM Plex Sans** is used as a main text in the webpage, making it the primary font. It's a modern font that provides a clean and legible look for the text, making it easy to read.
 
-![main font]()
+![main font](docs/IBMFont.jpg)
+
+* 
 
 ### imagery
 
