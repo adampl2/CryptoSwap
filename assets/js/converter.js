@@ -11,7 +11,7 @@ let lastPrice = null;
 
 // Stores the currency pairs to avoid calling the handlePrice 6 times.
 
-let cryptoArray = [{
+const cryptoArray = [{
     abr: "etheur",
     crypto: eth
   },
