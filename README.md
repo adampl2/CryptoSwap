@@ -119,11 +119,11 @@ Wireframes were created for desktop and mobile view. They were made to help me v
 * Mobile
   * The whole page on iPhone 14 plus - [View](docs/wireframes/mobile-wireframes.jpg)
 
-### Features
+## Features
 
-#### The Home Page
+### The Home Page
 
-#### Future Implementations
+### Future Implementations
 
 ### Accessibility
 
@@ -231,6 +231,7 @@ Clone the CryptoSwap repository:
 * [HopeUI](https://www.instagram.com/hopeui.io/) - NavBar and its responsiveness.
 * [W3schools](https://www.w3schools.com/howto/howto_js_tabs.asp) - Tabs to display different content on click event.
 * [W3schools](https://www.w3schools.com/howto/howto_js_read_more.asp) - Read more button function.
+* [Morgan Page](https://www.youtube.com/watch?v=XXuUNZIQUVA) - Connecting websocket.
 
 - - -
 

@@ -79,6 +79,27 @@ nav button {
     opacity: 0.8;
 }
 
+.nav-buttons>a {
+    position: absolute;
+    flex: 0 0 36px;
+    padding: 0 26px;
+    right: 0;
+    color: #ddd;
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+    height: 72px;
+    width: fit-content;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: 0.7s;
+}
+
+.nav-buttons>a:hover {
+    color: #FFFF33;
+    opacity: 0.8;
+}
+
 /* Heading */
 
 .convert-heading {
@@ -140,6 +161,7 @@ nav button {
 .tabs-heading {
     font-family: 'IBM Plex Sans', sans-serif;
     margin: 55px 0 25px 0;
+    font-size: 3rem;
 }
 
 [data-tab-info] {
@@ -220,6 +242,33 @@ nav button {
     color: #333;
 }
 
+/* Definitions */
+
+.def-h1 {
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 1.8px;
+}
+
+.def-containter {
+    width: 80%;
+    margin: 30px auto;
+    padding: 24px;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    background: #FFFDE6;
+}
+
+.def-containter>.definitions-div {
+    margin: 16px 0;
+}
+
+.definitions-div > p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1rem;
+}
+
 /* Footer */
 
 footer {
@@ -288,7 +337,7 @@ footer {
 
 /* Centers the nav menu and adds right margin */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
     .nav-buttons {
         flex: 1 1 auto;
         justify-content: center;
@@ -297,6 +346,10 @@ footer {
 }
 
 @media only screen and (max-width: 430px) {
+
+    .nav-buttons>a {
+        display: none;
+    }
 
     .main {
         width: 85%;
@@ -337,6 +390,11 @@ footer {
 }
 
 @media (max-width: 768px) and (min-width: 430px) {
+
+    .nav-buttons>a {
+        display: none;
+    }
+
     .main {
         padding: 0;
         margin: 1px auto;
