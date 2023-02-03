@@ -1,4 +1,4 @@
-// locates the ID of an element
+/** locates the ID of an element */ 
 
 let eth = document.getElementById("ethereum");
 let btc = document.getElementById("bitcoin");
@@ -9,9 +9,9 @@ let ltc = document.getElementById("litecoin");
 
 let lastPrice = null;
 
-// Stores the currency pairs to avoid calling the handlePrice 6 times.
+/** Stores the currency pairs to avoid calling the handlePrice 6 times. */ 
 
-const cryptoArray = [{
+const  CRYPTO_ARRAY = [{
     abr: "etheur",
     crypto: eth
   },
@@ -37,20 +37,17 @@ const cryptoArray = [{
   }
 ];
 
-/* Function below: 
-1. Gets data from 
-https://github.com/binance/binance-spot-api-docs/blob/master/web-socket-streams.md 
-to access live price of crypto in euros.
-2. Logs to the console if a connection has been established using "onopen" property.
-3. parses JSON into an object 
-4. Converts a string into floating-point number and returns a string representin a number in
-fixed-point notation.
-5. Assigns "eth" (or other crypto) variable to price.
-6. Changes color to green when price increases and to red if it decreases.
-7. Returns error message when one is encauntered both in the console and to inform user.
-*/
-
-// Many thanks and credits to https://www.youtube.com/watch?v=XXuUNZIQUVA for providing correct code for importing websockets.
+/** 
+ * Function below: 
+ * Gets data from https://github.com/binance/binance-spot-api-docs/blob/master/web-socket-streams.md 
+ * to access live price of crypto in euros.
+ * Logs to the console if a connection has been established using "onopen" property.
+ * parses JSON into an object 
+ * Converts a string into floating-point number and returns a string representin a number in fixed-point notation.
+ * Assigns "eth" (or other crypto) variable to price.
+ * Changes color to green when price increases and to red if it decreases.
+ * Returns error message when one is encauntered both in the console and to inform user.
+*/ 
 
 function handlePrice(abr, crypto) {
   let ws = new WebSocket(`wss://stream.binance.com:9443/ws/${abr}@trade`);
@@ -79,6 +76,8 @@ function handlePrice(abr, crypto) {
   };
 }
 
-// Iterates the cryptoArray and calls the handlePrice function
+/** Iterates the cryptoArray and calls the handlePrice function */
 
-cryptoArray.forEach(({abr, crypto}) => handlePrice(abr, crypto));
+CRYPTO_ARRAY.forEach(({abr, crypto}) => handlePrice(abr, crypto));
+
+addEventListener('DOMContentLoaded', handlePrice);

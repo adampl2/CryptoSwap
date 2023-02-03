@@ -1,16 +1,16 @@
 
-// Selects elements from the DOM and stores them in variables.
+/** Selects elements from the DOM and stores them in variables. */ 
 
 let dots = document.querySelectorAll('.dots');
 let hiddenTexts = document.querySelectorAll('.hidden-text');
 let buttonMore = document.querySelectorAll('.read-more-button');
-const tabInfos = document.querySelectorAll('.tabs__tab ');
+let tabInfos = document.querySelectorAll('.tabs__tab ');
 
 
-/* 
-* Opens a new paragraph when "Read more" button clicked
-* Changes "Read more" to "Read less"
-* Hides the paragraph if "Read less" is clicked
+/** 
+ * Opens a new paragraph when "Read more" button clicked
+ * Changes "Read more" to "Read less"
+ * Hides the paragraph if "Read less" is clicked
 */
 
 function readMore() {
@@ -31,14 +31,14 @@ function readMore() {
   }
 }
 
-// Opens NavBar link in a new tab
+/** Opens NavBar link in a new tab */ 
 
 function onNavButtonClick() {
   let link = this.getAttribute("data-href");
   window.open(link, "_blank");
 }
 
-// Changes contents of tabInfos when different tab is clicked.
+/** Changes contents of tabInfos when different tab is clicked. */
 
 function onTabClick(event) {
   const target = document.querySelector(event.target.dataset.tabValue);
@@ -50,7 +50,7 @@ function onTabClick(event) {
   });
 }
 
-// initialises an event handling for some elements in the DOM
+/** initialises an event handling for some elements in the DOM */ 
 
 function initializePage() {
   let buttons = document.querySelectorAll(".nav-button");
@@ -59,14 +59,14 @@ function initializePage() {
     button.addEventListener("click", onNavButtonClick);
   });
 
-  const tabs = document.querySelectorAll('[data-tab-value]');
+  let tabs = document.querySelectorAll('[data-tab-value]');
 
   tabs.forEach(tab => {
     tab.addEventListener('click', onTabClick);
   });
 }
 
-// Initialises the content once the page is loaded
+/** Initialises the content once the page is loaded */ 
 
 addEventListener('DOMContentLoaded', initializePage);
 
