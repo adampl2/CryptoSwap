@@ -1,42 +1,17 @@
-// Redirects the user to desired link when clicked on a navbar button
 
-let buttons = document.querySelectorAll(".nav-button");
-
-buttons.forEach(function (button) {
-  button.addEventListener("click", function () {
-    let link = this.getAttribute("data-href");
-    window.open(link, "_blank");
-  });
-});
-
-// Changes the content when clicked on a different tab in the "Learn more about crypto" section.
-// Credits to (https://www.w3schools.com/howto/howto_js_tabs.asp) for guidance.
-
-const tabs = document.querySelectorAll('[data-tab-value]');
-const tabInfos = document.querySelectorAll('.tabs__tab ');
-
-tabs.forEach(tab => {
-  tab.addEventListener('click', event => {
-    const target = document.querySelector(event.target.dataset.tabValue);
-    tabInfos.forEach(tabInfo => {
-      tabInfo.classList.remove('active');
-      if (tabInfo.id === target.id) {
-        tabInfo.classList.add('active');
-      }
-    });
-  });
-});
-
-/*
-This loop iterates through hiddenTexts and readMoreButtons to display the text when the button
-is clicked if the inner width is <= 430px
-
-Credits to (https://www.w3schools.com/howto/howto_js_read_more.asp) for guidance.
-*/
+// Selects elements from the DOM and stores them in variables.
 
 let dots = document.querySelectorAll('.dots');
 let hiddenTexts = document.querySelectorAll('.hidden-text');
 let buttonMore = document.querySelectorAll('.read-more-button');
+const tabInfos = document.querySelectorAll('.tabs__tab ');
+
+
+/* 
+* Opens a new paragraph when "Read more" button clicked
+* Changes "Read more" to "Read less"
+* Hides the paragraph if "Read less" is clicked
+*/
 
 function readMore() {
   for (let i = 0; i < dots.length; i++) {
@@ -55,3 +30,46 @@ function readMore() {
     }
   }
 }
+
+// Opens NavBar link in a new tab
+
+function onNavButtonClick() {
+  let link = this.getAttribute("data-href");
+  window.open(link, "_blank");
+}
+
+// Changes contents of tabInfos when different tab is clicked.
+
+function onTabClick(event) {
+  const target = document.querySelector(event.target.dataset.tabValue);
+  tabInfos.forEach(tabInfo => {
+    tabInfo.classList.remove('active');
+    if (tabInfo.id === target.id) {
+      tabInfo.classList.add('active');
+    }
+  });
+}
+
+// initialises an event handling for some elements in the DOM
+
+function initializePage() {
+  let buttons = document.querySelectorAll(".nav-button");
+
+  buttons.forEach(function(button) {
+    button.addEventListener("click", onNavButtonClick);
+  });
+
+  const tabs = document.querySelectorAll('[data-tab-value]');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', onTabClick);
+  });
+}
+
+// Initialises the content once the page is loaded
+
+addEventListener('DOMContentLoaded', initializePage);
+
+
+
+
