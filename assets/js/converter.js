@@ -7,11 +7,9 @@ let xrp = document.getElementById("ripple");
 let ada = document.getElementById("cardano");
 let ltc = document.getElementById("litecoin");
 
-let lastPrice = null;
-
 /** Stores the currency pairs to avoid calling the handlePrice 6 times. */ 
 
-const  CRYPTO_ARRAY = [{
+const  CRYPTOS_ARRAY = [{
     abr: "etheur",
     crypto: eth
   },
@@ -66,18 +64,27 @@ function handlePrice(abr, crypto) {
   };
 
   ws.onclose = (event) => {
-    console.error(`WebSocket connection for ${abr} closed. Reason: ${event.reason}`);
-    crypto.innerText = `Error, connection closed ${event.reason}`;
+    crypto.innerText = `Error for ${abr}, ${event.reason}`;
   };
 
   ws.onerror = (error) => {
-    console.error(`WebSocket error for ${abr}: ${error.message}`);
-    crypto.innerText = `Error: ${error.message}`;
+    crypto.innerText = `Error for ${abr}, ${error.message}`;
   };
 }
 
 /** Iterates the cryptoArray and calls the handlePrice function */
 
-CRYPTO_ARRAY.forEach(({abr, crypto}) => handlePrice(abr, crypto));
+CRYPTOS_ARRAY.forEach(({abr, crypto}) => handlePrice(abr, crypto));
 
 addEventListener('DOMContentLoaded', handlePrice);
+
+/**
+ * let btcAmount = document.getElementById("btcAmount").value;
+  let euroAmount = document.getElementById("eurAmount");
+  let btcEurRate = parseFloat(document.getElementById("bitcoin").innerText);
+  
+function calculateConversion() {
+  
+  euroAmount.value = (btcAmount * btcEurRate).toFixed(2);
+}
+ */
