@@ -83,7 +83,7 @@ nav button {
     flex: 0 0 36px;
     padding: 0 26px;
     right: 0;
-    color: #ddd;
+    color: #f9f9f9;
     display: grid;
     place-items: center;
     font-size: 1rem;
@@ -198,7 +198,6 @@ nav button {
     margin: 20px auto;
     display: flex;
     justify-content: center;
-    background: #ffffff;
     border: 2px solid #ffee00;
     border-radius: 6px;
 }
@@ -326,7 +325,7 @@ footer {
 .footer-element>a {
     font-family: 'IBM Plex Sans', sans-serif;
     text-decoration: none;
-    color: #ddd;
+    color: #f9f9f9;
     transition: 0.7s;
 }
 
