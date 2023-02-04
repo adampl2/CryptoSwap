@@ -105,7 +105,17 @@ Google Fonts was used for the following fonts:
 
 ![main font](docs/IBMFont.jpg)
 
-* 
+* **Space Mono** font is used as a logo font to help distinguish the logo from the rest of the text & make it attention-grabbing.
+
+![logo font](docs/SpacemonoFont.jpg)
+
+* **Asap** font is used as a h4 to display each crypto name in the .main container. It is a sans serif font that is designed to be legible and highly readable, making it ideal for use in headings and titles. The Asap font could help ensure that the names of different cryptocurrencies are clearly distinguishable and easy to read, even when the prices are rapidly changing. This can help make the information more accessible and usable for users who are tracking the price of different cryptocurrencies.
+
+![crypto names font](docs/AsapFont.jpg)
+
+* **Crimson Text** font is used to display the price, more specifically, the live (changing) numbers. I chose this font because it has a clear, clean, and legible typeface, making it ideal for displaying numbers. The font's design features crisp, distinctive numerals, which make it easy for readers to quickly identify and distinguish between numbers.
+
+![the price(numbers)](docs/CrimsonTextFont.jpg)
 
 ### imagery
 
