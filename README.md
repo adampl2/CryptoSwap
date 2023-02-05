@@ -97,6 +97,20 @@ Developed as part of a milestone project 2 for Code Institute, CryptoSwap offers
 
 ### Colour Scheme
 
+The Navbar and footer both have the same shade of black to make them distinguishable from the white background of the page. This has been done to create a visually pleasing & healthy contrast between contents of the page and background colour.
+
+The main "Track Live Prices" container and texts inside "Learn more about crypto" and "Definitions" both have a light yellow colour that has been adapted from binance.com to improve readability of the contents and create an eye-pleasing colour contrast.
+
+* Navbar, footer (background), all headings and span elements inside tabs (text) have `#19191C` as their colour.
+
+* Except for Logo `(#FFF)` and social media icons `(blue)`, buttons and all text on navbar and footer elements have a `#F9F9F9` colour.
+
+* Containers have a `#FFFDE6` colour as their backgrounds.
+
+* Paragraphs inside containers have a `#333` colour.
+
+   ![Colour Palette](docs/colours.jpg)
+
 ### Typography
 
 Google Fonts was used for the following fonts:
