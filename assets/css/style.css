@@ -161,6 +161,7 @@ nav button {
     font-family: 'IBM Plex Sans', sans-serif;
     margin: 55px 0 25px 0;
     font-size: 3rem;
+    text-align: center;
 }
 
 [data-tab-info] {
@@ -262,7 +263,7 @@ nav button {
     margin: 16px 0;
 }
 
-.definitions-div > p {
+.definitions-div>p {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1rem;
 }
@@ -354,23 +355,33 @@ footer {
         padding: 0;
     }
 
+    .convert-heading {
+        margin-top: 25%;
+        font-size: 2rem;
+        padding-bottom: 3%;
+    }
+
     .tabs-heading {
-        margin: 60px 0 40px 0;
+        margin-top: 15%;
+        font-size: 2rem;
+        padding-bottom: 3%;
     }
 
     .tab-content {
         width: 85%;
     }
 
-    .convert-heading {
-        width: 100%;
-        margin-top: 25%;
-        font-size: 28px;
+    .def-h1 {
+        font-size: 2rem;
     }
 
     .footer-container {
         flex-wrap: wrap;
         height: fit-content;
+    }
+
+    .footer-element1 {
+        padding-top: 16px;
     }
 
     .footer-column {
