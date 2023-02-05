@@ -4,7 +4,7 @@ Stay informed on cryptocurrency trends with CryptoSwap, a simple platform for li
 
 Developed as part of a milestone project 2 for Code Institute, CryptoSwap offers a compact resource for crypto enthusiasts and those looking to learn more. Get a glimpse into the dynamic world of cryptocurrency with CryptoSwap.
 
-(Add multidevice screenshot here)
+(Add multi device screenshot here)
 
 [View the deployed website here](https://adampl2.github.io/CryptoSwap/)
 
@@ -137,7 +137,7 @@ No images present.
 
 ### Wireframes
 
-Wireframes were created for desktop and mobile view. They were made to help me visualise the layout of the website before it was finished and make any tweaks easier.
+Wireframes were created for desktop and mobile view. They were made to help me visualize the layout of the website before it was finished and make any tweaks easier.
 
 * Desktop
   * Navbar + converter - [View](docs/wireframes/Desktop%201.jpg)
@@ -185,7 +185,7 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 
 * [loading.io](https://loading.io/) To create loading GIF.
 
-* [cryptocoins-icons](https://www.npmjs.com/package/cryptocoins-icons) To generate Crypto Icons.
+* [Crypto coins](https://www.npmjs.com/package/cryptocoins-icons) To generate Crypto Icons.
 
 - - -
 
@@ -203,7 +203,7 @@ The W3C validator was used to validate the HTML and CSS pages.
 
 ### Fixed Bugs
 
-1. The Fontawesome icons did not render properly when wrappen in an achor element. I fixed this by wrapping them in a button instead and utilising JavaScript to make sure each button leads to the correct source.
+1. The Fontawesome icons did not render properly when wrapped in an anchor element. I fixed this by wrapping them in a button instead and utilising JavaScript to make sure each button leads to the correct source.
 
 ### Test Cases
 

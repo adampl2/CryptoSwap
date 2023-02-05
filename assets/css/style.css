@@ -255,7 +255,7 @@ nav button {
     color: #19191C;
 }
 
-.def-containter {
+.def-container {
     width: 80%;
     margin: 30px auto;
     padding: 24px;
@@ -264,7 +264,7 @@ nav button {
     background: #FFFDE6;
 }
 
-.def-containter>.definitions-div {
+.def-container>.definitions-div {
     margin: 16px 0;
 }
 
