@@ -110,6 +110,7 @@ nav button {
     font-size: 3rem;
     text-transform: capitalize;
     word-spacing: 5px;
+    color: #19191C;
 }
 
 /* Live price container */
@@ -134,6 +135,7 @@ nav button {
     text-transform: uppercase;
     font-weight: 550;
     padding: 16px 0;
+    color: #19191C;
 }
 
 .price {
@@ -162,6 +164,7 @@ nav button {
     margin: 55px 0 25px 0;
     font-size: 3rem;
     text-align: center;
+    color: #19191C;
 }
 
 [data-tab-info] {
@@ -201,6 +204,7 @@ nav button {
     justify-content: center;
     border: 2px solid #ffee00;
     border-radius: 6px;
+    color: #19191C;
 }
 
 .tabs span {
@@ -248,6 +252,7 @@ nav button {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 3rem;
     letter-spacing: 1.8px;
+    color: #19191C;
 }
 
 .def-containter {
@@ -266,6 +271,7 @@ nav button {
 .definitions-div>p {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1rem;
+    color:#333;
 }
 
 /* Footer */
@@ -311,6 +317,7 @@ footer {
 .footer-element {
     padding: 12px 0;
     text-align: left;
+    color: #f9f9f9;
 }
 
 .footer-element1 {
