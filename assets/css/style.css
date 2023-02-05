@@ -157,6 +157,37 @@ nav button {
     cursor: pointer;
 }
 
+/* BTC to EUR convert section */
+
+.btceur-heading {
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 3rem;
+    margin: 45px 0 35px;
+}
+
+.btceur-convert {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+    border: 2px solid #ffee00;
+    border-radius: 6px;
+    padding: 16px 24px;
+}
+
+.btceur-convert label {
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding-right: 6px;
+    font-size: 1.1rem;
+}
+
+.btceur-convert input, .btceur-convert span {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.2rem;
+    padding: 3px;
+    border: none;
+}
+
 /* The tabs menu */
 
 .tabs-heading {
@@ -271,7 +302,7 @@ nav button {
 .definitions-div>p {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1rem;
-    color:#333;
+    color: #333;
 }
 
 /* Footer */

@@ -28,17 +28,22 @@
       "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
    },
    "cSpell.words": [
+      "adaeur",
       "adampl",
       "ASIC",
       "Bayfront",
+      "bnbeur",
+      "btceur",
       "Buterin",
       "Cardano",
       "Colour",
       "colours",
       "Decentralisation",
+      "etheur",
       "Fontawesome",
       "Konieczny",
       "Litecoin",
+      "ltceur",
       "Nakamoto",
       "navlogo",
       "Rohit",
@@ -47,6 +52,7 @@
       "utilised",
       "utilising",
       "Vitalik",
-      "Wireframes"
+      "Wireframes",
+      "xrpeur"
    ]
 }

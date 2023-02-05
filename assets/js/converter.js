@@ -1,4 +1,4 @@
-/** locates the ID of an element */ 
+/** locates the ID of an element */
 
 let eth = document.getElementById("ethereum");
 let btc = document.getElementById("bitcoin");
@@ -7,15 +7,20 @@ let xrp = document.getElementById("ripple");
 let ada = document.getElementById("cardano");
 let ltc = document.getElementById("litecoin");
 
-/** Stores the currency pairs to avoid calling the handlePrice 6 times. */ 
+/** Stores the currency pairs to avoid calling the handlePrice 6 times. */
 
-const  CRYPTOS_ARRAY = [{
+let cryptoRates = {
+  "bitcoin": 0
+};
+
+const CRYPTOS_ARRAY = [{
     abr: "etheur",
     crypto: eth
   },
   {
     abr: "btceur",
-    crypto: btc
+    crypto: btc,
+    rates_key: "bitcoin"
   },
   {
     abr: "bnbeur",
@@ -35,19 +40,30 @@ const  CRYPTOS_ARRAY = [{
   }
 ];
 
+document.getElementById("btcAmount").addEventListener("input", calculateConversion);
+
+function calculateConversion() {
+
+  let btcAmount = document.getElementById("btcAmount").value;
+  let euroAmount = document.getElementById("eurAmount");
+  let btcEurRate = parseFloat(document.getElementById("bitcoin").innerText);
+
+  euroAmount.innerText = (btcAmount * btcEurRate).toFixed(2);
+}
+
 /** 
  * Function below: 
  * Gets data from https://github.com/binance/binance-spot-api-docs/blob/master/web-socket-streams.md 
  * to access live price of crypto in euros.
  * Logs to the console if a connection has been established using "onopen" property.
  * parses JSON into an object 
- * Converts a string into floating-point number and returns a string representin a number in fixed-point notation.
+ * Converts a string into floating-point number and returns a string representing a number in fixed-point notation.
  * Assigns "eth" (or other crypto) variable to price.
  * Changes color to green when price increases and to red if it decreases.
- * Returns error message when one is encauntered both in the console and to inform user.
-*/ 
+ * Returns error message when one is encountered both in the console and to inform user.
+ */
 
-function handlePrice(abr, crypto) {
+function handlePrice(abr, crypto, rates_key) {
   let ws = new WebSocket(`wss://stream.binance.com:9443/ws/${abr}@trade`);
   let lastPrice = null;
 
@@ -61,6 +77,7 @@ function handlePrice(abr, crypto) {
     crypto.innerText = price;
     crypto.style.color = !lastPrice || lastPrice === price ? 'black' : price > lastPrice ? 'green' : 'red';
     lastPrice = price;
+    cryptoRates[rates_key] = price;
   };
 
   ws.onclose = (event) => {
@@ -74,17 +91,10 @@ function handlePrice(abr, crypto) {
 
 /** Iterates the cryptoArray and calls the handlePrice function */
 
-CRYPTOS_ARRAY.forEach(({abr, crypto}) => handlePrice(abr, crypto));
+CRYPTOS_ARRAY.forEach(({
+  abr,
+  crypto,
+  rates_key
+}) => handlePrice(abr, crypto, rates_key));
 
-addEventListener('DOMContentLoaded', handlePrice);
-
-/**
- * let btcAmount = document.getElementById("btcAmount").value;
-  let euroAmount = document.getElementById("eurAmount");
-  let btcEurRate = parseFloat(document.getElementById("bitcoin").innerText);
-  
-function calculateConversion() {
-  
-  euroAmount.value = (btcAmount * btcEurRate).toFixed(2);
-}
- */
+addEventListener('DOMContentLoaded', handlePrice, calculateConversion);
