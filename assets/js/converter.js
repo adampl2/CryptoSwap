@@ -40,6 +40,8 @@ const CRYPTOS_ARRAY = [{
   }
 ];
 
+/** Converts any btc amount to eur */
+
 document.getElementById("btcAmount").addEventListener("input", calculateConversion);
 
 function calculateConversion() {
@@ -66,10 +68,6 @@ function calculateConversion() {
 function handlePrice(abr, crypto, rates_key) {
   let ws = new WebSocket(`wss://stream.binance.com:9443/ws/${abr}@trade`);
   let lastPrice = null;
-
-  ws.onopen = () => {
-    console.log(`WebSocket connection for ${abr} established`);
-  };
 
   ws.onmessage = (event) => {
     let stockObject = JSON.parse(event.data);

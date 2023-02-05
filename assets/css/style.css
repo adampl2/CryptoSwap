@@ -164,6 +164,7 @@ nav button {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 3rem;
     margin: 45px 0 35px;
+    color: #19191C;
 }
 
 .btceur-convert {
@@ -384,6 +385,10 @@ footer {
 
 @media only screen and (max-width: 430px) {
 
+    .navlogo {
+        font-size: 1.2rem;
+    }
+
     .nav-buttons>a {
         display: none;
     }
@@ -397,6 +402,15 @@ footer {
         margin-top: 25%;
         font-size: 2rem;
         padding-bottom: 3%;
+    }
+
+    .btceur-heading {
+        font-size: 2rem;
+    }
+
+    .btceur-convert {
+        width: 85%;
+        padding: 14px 18px;
     }
 
     .tabs-heading {
