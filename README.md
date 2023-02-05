@@ -171,6 +171,8 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 
 * [GitHub](https://github.com/) To save and store the files for the website.
 
+* [GitPod](https://gitpod.io) IDE used to create the site.
+
 * [Google Fonts](https://fonts.google.com/) To import the fonts used on the website.
 
 * [Bootstrap](https://getbootstrap.com/) For style.css.
@@ -180,6 +182,8 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 * [Google Dev Tools](https://developer.chrome.com/docs/devtools/) For troubleshooting, testing features and solving issues with responsiveness and styling.
 
 * [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
+
+* [Binance websocket](https://github.com/binance/binance-spot-api-docs/blob/master/web-socket-streams.md) Used to provide live crypto data.
 
 * [Favicon.io](https://favicon.io/) To create favicon.
 
