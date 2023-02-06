@@ -2,9 +2,11 @@
 
 Stay informed on cryptocurrency trends with CryptoSwap, a simple platform for live pricing information. View up-to-date values for six popular cryptocurrencies, displayed in euros for ease of use.
 
+**New Feature** Convert any Bitcoin amount to Euros (EUR)!
+
 Developed as part of a milestone project 2 for Code Institute, CryptoSwap offers a compact resource for crypto enthusiasts and those looking to learn more. Get a glimpse into the dynamic world of cryptocurrency with CryptoSwap.
 
-(Add multi device screenshot here)
+  ![Multi-screen](docs/Multidevice-screenshot.jpg)
 
 [View the deployed website here](https://adampl2.github.io/CryptoSwap/)
 
@@ -53,13 +55,15 @@ Developed as part of a milestone project 2 for Code Institute, CryptoSwap offers
 
 4. External sources: Allow users to access external sources for buying cryptocurrency, viewing CoinMarketCap, and reading CoinDesk news.
 
-5. Contact us: Provide a way for users to reach out with questions or feedback through an email address and physical address.
+5. Contact us: Provide a way for users to reach out with questions or feedback through an email address and physical address (Note: Address and email are fictional, for visual representation only).
+
+6. Convert Your Crypto: Provide a feature where user can enter any amount of BTC they wish and convert it to EUR.
 
 ### User Stories
 
   1. First-time user: As a newcomer to the crypto world, I want a user-friendly platform that provides live pricing information and educational resources so that I can learn about cryptocurrency and track market trends.
 
-  2. Returning user: As a regular user of the website, I want to be able to easily access live pricing information, external sources, and news updates so that I can stay informed and make informed decisions about my investments. I also want to have the ability to contact the team for support if needed.
+  2. Returning user: As a regular user of the website, I want to be able to easily access live pricing information, external sources, convert my crypto, and access news updates so that I can stay informed and make informed decisions about my investments. I also want to have the ability to contact the team for support if needed.
 
 ### User Goals
 
@@ -70,6 +74,8 @@ Developed as part of a milestone project 2 for Code Institute, CryptoSwap offers
 2. Educational resources: The client wants to have access to educational resources and information about the blockchain and crypto in general to expand their knowledge and stay informed.
 
 3. Convenient and user-friendly platform: The client wants a user-friendly platform that offers a comprehensive and convenient one-stop destination for all things cryptocurrency, including external sources for buying, CoinMarketCap, CoinDesk news, and a way to contact the team for support.
+
+4. Ability to convert Bitcoin: The client wants to convert any amount of BTC to EUR they wish and receive up-to-date price in valid currency.
 
 #### First-Time Visitor Goals
 
@@ -99,7 +105,7 @@ Developed as part of a milestone project 2 for Code Institute, CryptoSwap offers
 
 The Navbar and footer both have the same shade of black to make them distinguishable from the white background of the page. This has been done to create a visually pleasing & healthy contrast between contents of the page and background colour.
 
-The main "Track Live Prices" container and texts inside "Learn more about crypto" and "Definitions" both have a light yellow colour that has been adapted from binance.com to improve readability of the contents and create an eye-pleasing colour contrast.
+The main "Track Live Prices" container and texts inside "Learn more about crypto", "Convert Your Bitcoin", and "Definitions" all have a light yellow colour that has been adapted from binance.com to improve readability of the contents and create an eye-pleasing colour contrast.
 
 * Navbar, footer (background), all headings and span elements inside tabs (text) have `#19191C` as their colour.
 
