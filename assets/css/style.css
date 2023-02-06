@@ -41,7 +41,7 @@ nav button {
     justify-content: space-between;
     width: 100%;
     height: 72px;
-    padding: 0 20px;
+    padding: 0 20px 0 16px;
     background: #19191c;
     color: #f9f9f9;
 }
@@ -103,7 +103,7 @@ nav button {
 
 .convert-heading {
     text-align: center;
-    margin-top: 11%;
+    margin-top: 110px;
     margin-bottom: 30px;
     width: 100%;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -131,7 +131,7 @@ nav button {
     margin: auto;
     text-align: left;
     font-family: 'Asap', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: 550;
     padding: 16px 0;
@@ -140,7 +140,7 @@ nav button {
 
 .price {
     font-family: 'Crimson Text', serif;
-    font-size: 24px;
+    font-size: 1.4rem;
     padding-left: 6px;
 }
 
@@ -197,6 +197,7 @@ nav button {
     font-size: 3rem;
     text-align: center;
     color: #19191C;
+    text-transform: capitalize;
 }
 
 [data-tab-info] {
@@ -411,6 +412,10 @@ footer {
     .btceur-convert {
         width: 85%;
         padding: 14px 18px;
+    }
+
+    .btceur-convert input {
+        width: 30%;
     }
 
     .tabs-heading {
