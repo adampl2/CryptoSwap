@@ -14,44 +14,31 @@ let cryptoRates = {
 };
 
 const CRYPTOS_ARRAY = [{
-    abr: "etheur",
+    currency_pair: "etheur",
     crypto: eth
   },
   {
-    abr: "btceur",
+    currency_pair: "btceur",
     crypto: btc,
     rates_key: "bitcoin"
   },
   {
-    abr: "bnbeur",
+    currency_pair: "bnbeur",
     crypto: bnb
   },
   {
-    abr: "xrpeur",
+    currency_pair: "xrpeur",
     crypto: xrp
   },
   {
-    abr: "adaeur",
+    currency_pair: "adaeur",
     crypto: ada
   },
   {
-    abr: "ltceur",
+    currency_pair: "ltceur",
     crypto: ltc
   }
 ];
-
-/** Converts any btc amount to eur */
-
-document.getElementById("btcAmount").addEventListener("input", calculateConversion);
-
-function calculateConversion() {
-
-  let btcAmount = document.getElementById("btcAmount").value;
-  let euroAmount = document.getElementById("eurAmount");
-  let btcEurRate = parseFloat(document.getElementById("bitcoin").innerText);
-
-  euroAmount.innerText = (btcAmount * btcEurRate).toFixed(2);
-}
 
 /** 
  * Function below: 
@@ -65,11 +52,11 @@ function calculateConversion() {
  * Returns error message when one is encountered both in the console and to inform user.
  */
 
-function handlePrice(abr, crypto, rates_key) {
-  let ws = new WebSocket(`wss://stream.binance.com:9443/ws/${abr}@trade`);
+function handlePrice(currency_pair, crypto, rates_key) {
+  let webSocket = new WebSocket(`wss://stream.binance.com:9443/ws/${currency_pair}@trade`);
   let lastPrice = null;
 
-  ws.onmessage = (event) => {
+  webSocket.onmessage = (event) => {
     let stockObject = JSON.parse(event.data);
     let price = parseFloat(stockObject.p).toFixed(2);
     crypto.innerText = price;
@@ -78,21 +65,38 @@ function handlePrice(abr, crypto, rates_key) {
     cryptoRates[rates_key] = price;
   };
 
-  ws.onclose = (event) => {
-    crypto.innerText = `Error for ${abr}, ${event.reason}`;
+  webSocket.onclose = (event) => {
+    crypto.innerText = `Error for ${currency_pair}, ${event.reason}`;
   };
 
-  ws.onerror = (error) => {
-    crypto.innerText = `Error for ${abr}, ${error.message}`;
+  webSocket.onerror = (error) => {
+    crypto.innerText = `Error for ${currency_pair}, ${error.message}`;
   };
+}
+
+/** handlePrice will execute every 5 seconds using the setInterval JS function */
+
+setInterval(handlePrice, 10 * 500);
+
+/** Converts any btc amount to eur */
+
+document.getElementById("btcAmount").addEventListener("input", calculateConversion);
+
+function calculateConversion() {
+
+  let btcAmount = document.getElementById("btcAmount").value;
+  let euroAmount = document.getElementById("eurAmount");
+  let btcEurRate = parseFloat(btc.innerText);
+
+  euroAmount.innerText = (btcAmount * btcEurRate).toFixed(2);
 }
 
 /** Iterates the cryptoArray and calls the handlePrice function */
 
 CRYPTOS_ARRAY.forEach(({
-  abr,
+  currency_pair,
   crypto,
   rates_key
-}) => handlePrice(abr, crypto, rates_key));
+}) => handlePrice(currency_pair, crypto, rates_key));
 
 addEventListener('DOMContentLoaded', handlePrice, calculateConversion);
