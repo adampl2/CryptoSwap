@@ -155,6 +155,63 @@ Wireframes were created for desktop and mobile view. They were made to help me v
 
 ### The Home Page
 
+The page only consists of the Home page where all features and content are present & responsive.
+
+* The browser tab & favicon:
+
+  ![favicon](docs/features/features-tab.jpg)
+
+* The navbar (from left) consists of a logo (refreshes the page), 3 buttons that lead to binance.com, coinmarketcap and coindesk. It also has a *Learn about crypto* that leads to a corresponding link on the page and is only visible on desktop and some iPads, for example iPad Air.
+
+  ![navbar](docs/features/features-navbar.jpg)
+
+* The Track Live Prices section allows user to view up-to-date pricing of 6 popular cryptocurrencies.
+
+  ![live prices](docs/features/features-liveprices.jpg)
+
+* The Convert Your Bitcoin feature lets the user to enter any BTC amount up to 9 characters and view that converted amount in Euro (EUR). There is no need to click any button (as it does not exist) or press ENTER, the amount in EUR will update automatically as BTC amount in input field is changed by the user.
+
+  ![btceur convert](docs/features/features-convertbtceur.jpg)
+
+* The Learn About Crypto section consists of 6 interactive tabs. Each tab contains a heading, text and "Read more..." button. Once clicked - reveals more text and changes its form to "Read less..."
+
+  ![tabs less txt](docs/features/features-learnaboutcrypto-less.jpg)
+
+   After the button is clicked:
+
+   ![tabs more txt](docs/features/features-learnaboutcrypto-more.jpg)
+
+* The Definitions section consists of 3 short definitions.
+
+  ![definitions](docs/features/features-definitions.jpg)
+
+* The footer section has 3 columns - Logo and contact details (fictional), Education - 2 links leading to educational YouTube channels, 1 in English and 1 in Polish. Buy Crypto - Leading to 2 biggest crypto exchanges.
+
+  ![footer](docs/features/features-footer.jpg)
+
+### Mobile
+
+* navbar + Live prices - mobile view (Samsung Galaxy S20 Ultra)
+
+  ![mobile view top](docs/features/featuresm-top.jpg)
+
+* Convert BTC
+
+  ![mobile convert](docs/features/featuresm-btceur.jpg)
+
+* Learn About Crypto
+
+  ![mobile learn](docs/features/featuresm-learn.jpg)
+  ![mobile learn more txt](docs/features/featuresm-learnmoretxt.jpg)
+
+* Definitions
+
+  ![mobile definitions](docs/features/featuresm-definitions.jpg)
+
+* Footer
+
+  ![footer](docs/features/featuresm-footer.jpg)
+
 ### Future Implementations
 
 ### Accessibility
@@ -268,6 +325,7 @@ Clone the CryptoSwap repository:
 * [W3schools](https://www.w3schools.com/howto/howto_js_tabs.asp) - Tabs to display different content on click event.
 * [W3schools](https://www.w3schools.com/howto/howto_js_read_more.asp) - Read more button function.
 * [Morgan Page](https://www.youtube.com/watch?v=XXuUNZIQUVA) - Connecting websocket.
+* [Avinash Jain](https://stackoverflow.com/questions/18510845/maxlength-ignored-for-input-type-number-in-chrome) - Specifying max characters allowed in *Convert Your Bitcoin* input field.
 
 - - -
 
