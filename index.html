@@ -104,8 +104,8 @@
 
     <form class="btceur-convert">
         <label>Enter amount in BTC:</label>
-        <input oninput="this.value=this.value.slice(0,this.maxLength)" maxlength="9" type="number" id="btcAmount" placeholder="0.00">
-        <br><br>
+        <input type="text" maxlength="10" id="btcAmount" placeholder="0.00">
+        <br><span id="error-msg"></span><br>
         <label>Value in Euros (EUR): €</label><span id="eurAmount"></span>
     </form>
 
