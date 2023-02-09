@@ -87,8 +87,24 @@ function calculateConversion() {
   let btcAmount = document.getElementById("btcAmount").value;
   let euroAmount = document.getElementById("eurAmount");
   let btcEurRate = parseFloat(btc.innerText);
+  let errorMessage = document.getElementById("error-msg");
 
   euroAmount.innerText = (btcAmount * btcEurRate).toFixed(2);
+
+  /** if value is not a number or is greater than 21 million error will show */
+
+  if (isNaN(btcAmount)) {
+    errorMessage.innerText = "Please enter only numeric values";
+    errorMessage.style.color = "red";
+    euroAmount.innerText = "";
+  } else if (btcAmount > 21000000) {
+    errorMessage.innerText = "The max limit is 21000000";
+    errorMessage.style.color = "red";
+    euroAmount.innerText = "";
+  } else {
+    errorMessage.innerText = "";
+    return;
+  }
 }
 
 /** Iterates the cryptoArray and calls the handlePrice function */
