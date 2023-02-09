@@ -214,6 +214,18 @@ The page only consists of the Home page where all features and content are prese
 
 ### Future Implementations
 
+The following ideas & features to be potentially implemented in the future:
+
+  1. More advanced error handling for handlePrice function: As the code currently stands, it provides some basic error handling by updating the inner text of the crypto HTML element to display error messages if the WebSocket connection is closed or if an error occurs. More robust error handling should be implemented, such as logging the errors or displaying them in a separate UI element.
+
+  2. Caching: Store data for later use, for example, to display to the user the change in price since they visited the website. Additional storage and event listeners would have to be implemented.
+
+  3. Back to Top button: This potential feature would allow the user to go back to the top of the webpage quickly - with a touch of a finger (or a click!).
+
+  4. More fiat currencies: Allow the user to view live prices of crypto not just in euros, but to add an option for more, for example, USD, GBP, CHF and so on.
+
+  5. Convert: Allow the user to convert all the displayed crypto into EUR, and perhaps more fiat currencies.
+
 ### Accessibility
 
 It was ensured that the website is accessible and as user-friendly as possible. I have achieved this by:
