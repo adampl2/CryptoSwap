@@ -272,7 +272,7 @@ The W3C validator was used to validate the HTML and CSS pages.
 
 1. The Fontawesome icons did not render properly when wrapped in an anchor element. I fixed this by wrapping them in a button instead and utilising JavaScript to make sure each button leads to the correct source.
 
-2. The input field in the BTC/EUR convert section did not have a character limit. The maxlength attribute did not work since its type was a number. I have created a Javascript <code>.slice()</code> method to fix this and allow the maxlength attribute to be applied.
+2. The input field in the BTC/EUR convert section did not have a character limit, and did not inform the user that it must be a number & <= 21000000. Firstly, I have changed its type to <code>type="text"</code> which allowed me to specify max length using <code>maxlength="10" </code> attribute. Secondly, I added an *if* statement to the js file that informs the user that input must be a number and cannot be greater than 21000000.
 
 ### Test Cases
 
