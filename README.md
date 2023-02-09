@@ -230,6 +230,12 @@ The following ideas & features to be potentially implemented in the future:
 
 It was ensured that the website is accessible and as user-friendly as possible. I have achieved this by:
 
+* Using semantic HTML.
+* Following heading hierarchy.
+* Implementing *Tab* friendly navigation for links.
+* Using hover effects on all buttons and links to inform the user they are hovering on a button.
+* Complying with colour contrast guidelines (Aa).
+
 - - -
 
 ## Technology
