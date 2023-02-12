@@ -284,14 +284,6 @@ Please refer to [TESTING.md](TESTING.md) file for full testing procedure.
 
 2. The input field in the BTC/EUR convert section did not have a character limit, and did not inform the user that it must be a number & <= 21000000. Firstly, I have changed its type to <code>type="text"</code> which allowed me to specify max length using <code>maxlength="10" </code> attribute. Secondly, I added an *if* statement to the js file that informs the user that input must be a number and cannot be greater than 21000000.
 
-### Test Cases
-
-I have fully tested the website using Google Chrome and Mozilla Firefox on desktop (HP Pavilion Convertible 14 inch) and mobile (Samsung Note9).
-
-It was ensured that through the testing process content was responsive using the Google Developer Tools.
-
-#### Home page
-
 - - -
 
 ## Deployment & Local Development
