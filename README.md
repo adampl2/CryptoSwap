@@ -12,38 +12,37 @@ Developed as part of a milestone project 2 for Code Institute, CryptoSwap offers
 
 ## Table of contents
 
-* [`User Experience`](#User-Experience-UX)
-  * [`User Stories`](#User-Stories)
+* [`User Experience`](#user-experience-ux)
+  * [`User Stories`](#user-stories)
 
-* [`Design`](#Design)
-  * [`Colour Scheme`](#Colour-Scheme)
-  * [`Typography`](#Typography)
-  * [`Imagery`](#Imagery)
-  * [`Wireframes`](#Wireframes)
-  * [`Features`](#Features)
-    * [`The Home Page`](#The-Home-Page)
-    * [`Future Implementations`](#Future-Implementations)
-  * [`Accessibility`](#Accessibility)
+* [`Design`](#design)
+  * [`Colour Scheme`](#colour-scheme)
+  * [`Typography`](#typography)
+  * [`Imagery`](#imagery)
+  * [`Wireframes`](#wireframes)
+  * [`Features`](#features)
+    * [`The Home Page`](#the-home-page)
+    * [`Future Implementations`](#future-implementations)
+  * [`Accessibility`](#accessibility)
 
-* [`Technologies Used`](#Technology)
-  * [`Languages Used`](#Languages-Used)
-  * [`Frameworks, Libraries & Programs Used`](#Frameworks-&-Programs-Used)
+* [`Technologies Used`](#technology)
+  * [`Languages Used`](#languages-used)
+  * [`Frameworks, Libraries & Programs Used`](#frameworks--programs-used)
 
-* [`Deployment & Local Development`](#Deployment-&-Local-Development)
-  * [`Deployment`](#Deployment)
-  * [`Local Development`](#Local-Development)
-    * [`How to Fork`](#How-to-Fork)
-    * [`How to Clone`](#How-to-Clone)
+* [`Deployment & Local Development`](#deployment--local-development)
+  * [`Deployment`](#deployment)
+  * [`Local Development`](#local-development)
+    * [`How to Fork`](#how-to-fork)
+    * [`How to Clone`](#how-to-clone)
 
-* [`Testing`](#Testing)
-  * [`Fixed Bugs`](#Fixed-Bugs)
-  * [`Test Cases`](#test-cases)
+* [`Testing`](#testing)
+  * [`Fixed Bugs`](#fixed-bugs)
   
-* [`Credits`](#Credits)
+* [`Credits`](#credits)
   * [`Code Used`](#code-credits)
-  * [`Acknowledgments`](#Acknowledgements)
+  * [`Acknowledgments`](#acknowledgements)
 
-## User Experience UX
+## User Experience (UX)
 
 ### Key information for the site
 
@@ -282,7 +281,7 @@ Please refer to [TESTING.md](TESTING.md) file for full testing procedure.
 
 1. The Fontawesome icons did not render properly when wrapped in an anchor element. I fixed this by wrapping them in a button instead and utilising JavaScript to make sure each button leads to the correct source.
 
-2. The input field in the BTC/EUR convert section did not have a character limit, and did not inform the user that it must be a number & <= 21000000. Firstly, I have changed its type to <code>type="text"</code> which allowed me to specify max length using <code>maxlength="10" </code> attribute. Secondly, I added an *if* statement to the js file that informs the user that input must be a number and cannot be greater than 21000000.
+2. The input field in the BTC/EUR convert section did not have a character limit, and did not inform the user that it must be a number & <= 21000000. Firstly, I have changed its type to `type="text"` which allowed me to specify max length using `maxlength="10"` attribute. Secondly, I added an *if* statement to the js file that informs the user that input must be a number and cannot be greater than 21000000.
 
 - - -
 
