@@ -8,7 +8,13 @@
 
 ## CONTENTS
 
-* [Automated testing](#Automated-testing)
+* [Automated Testing](#automated-testing)
+  * [W3C Validator](#w3c-validator)
+  * [JavaScript Validator](#javascript-validator)
+  * [Lighthouse](#lighthouse)
+* [Manual Testing](#manual-testing)
+  * [User Stories](#user-stories)
+  * [Full Testing](#full-testing)
 
 Testing progressed at every stage of this project. This ensured that most issues were fixed before the website was finished. Chrome DevTools were utilised when building the website to help with troubleshooting as the website transformed.
 
@@ -67,3 +73,23 @@ Further testing was performed by friends & family. No issues reported.
 | Enter amount in BTC input | User should see converter amount in EUR | Any amount entered from 0 to 21,000,000 | BTC/EUR conversion | Pass |
 | Enter amount in BTC input | User should see "Please enter only numeric values" message | Entered anything other than a Number | "Please enter only numeric values" message appears below in red | Pass |
 | Enter amount in BTC input | User should see "The max limit is 21000000" message | Enter a number greater than 21,000,000BTC | "The max limit is 21000000" appears below in red| Pass |
+
+`Home page - Learn About Crypto`
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Crypto Tabs | A tab consisting of a description of each crypto & *Read less* button should appear below | Tab clicked | New content appears | Pass |
+| *Read more* button | User should see expanded paragraph | Button clicked | Text expands | Pass |
+| *Read less* button | Expanded paragraph should collapse back to its original shortened form | Button clicked | Expanded text disappears | Pass |
+
+`Home page - Footer`
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| *Data Dash* button | Data Dash Youtube channel should open in a new window | Button clicked | Page opens in a separate window | Pass |
+| *Phil Konieczny (PL)* button | Phil's Youtube channel should open in a new window | Button clicked | Page opens in a separate window | Pass |
+| *Binance* button | Binance exchange should open in a new window | Button clicked | Page opens in a separate window | Pass |
+| *Coindesk* button | Coindesk exchange should open in a new window | Button clicked | Page opens in a separate window | Pass |
+| Facebook link | Facebook should open in a new window | Link clicked | Page opens in a separate window | Pass |
+| Twitter link | Twitter should open in a new window | Link clicked | Page opens in a separate window | Pass |
+| Instagram link | Instagram should open in a new window | Link clicked | Page opens in a separate window | Pass |
