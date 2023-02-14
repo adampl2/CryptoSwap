@@ -8,13 +8,13 @@
 
 ## CONTENTS
 
-* [Automated Testing](#automated-testing)
-  * [W3C Validator](#w3c-validator)
-  * [JavaScript Validator](#javascript-validator)
-  * [Lighthouse](#lighthouse)
-* [Manual Testing](#manual-testing)
-  * [User Stories](#user-stories)
-  * [Full Testing](#full-testing)
+* [`Automated Testing`](#automated-testing)
+  * [`W3C Validator`](#w3c-validator)
+  * [`JavaScript Validator`](#javascript-validator)
+  * [`Lighthouse`](#lighthouse)
+* [`Manual Testing`](#manual-testing)
+  * [`User Stories`](#user-stories)
+  * [`Full Testing`](#full-testing)
 
 Testing progressed at every stage of this project. This ensured that most issues were fixed before the website was finished. Chrome DevTools were utilised when building the website to help with troubleshooting as the website transformed.
 
