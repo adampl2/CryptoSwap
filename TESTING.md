@@ -46,6 +46,11 @@ The [W3C validator](https://validator.w3.org/) was used to validate the HTML and
 
 `Client Goals`
 
+| Goals | How are they achieved? |
+| :--- | :--- |
+| First-time user: As a newcomer to the crypto world, I want a user-friendly platform that provides live pricing information and educational resources so that I can learn about cryptocurrency and track market trends. | I have created a website that is easy to move around, provided live prices of 6 cryptocurrencies displayed in EUR and created a section where users can educate themselves about crypto | I want the site to be responsive to my device. | I have developed the site with responsiveness in mind. |
+| Ability to convert Bitcoin: The client wants to convert any amount of BTC to EUR they wish and receive up-to-date price in valid currency. | I have created a section where users can convert BTC to EUR instantly. |
+
 - - -
 
 ### Full Testing
@@ -64,7 +69,7 @@ Further testing was performed by friends & family. No issues reported.
 | *Buy Crypto!* button | Redirects user to external Binance page | Clicked on button | Binance page opens in a separate window | Pass |
 | *Coinmarketcap* button | Redirects user to external Coinmarketcap page | Clicked on button | Coinmarketcap page opens in a separate window | Pass |
 | *News* button | Redirects user to external Coindesk page | Clicked on button | Coindesk page opens in a separate window | Pass |
-| *Learn about crypto* button | Redirects user to Learn about crypto section on the page | Clicked on button | User redirected to Learn about crypto section | Pass |   
+| *Learn about crypto* button | Redirects user to Learn about crypto section on the page | Clicked on button | User redirected to Learn about crypto section | Pass
 
 `Home page - Convert Your Bitcoin`
 
@@ -92,4 +97,4 @@ Further testing was performed by friends & family. No issues reported.
 | *Coindesk* button | Coindesk exchange should open in a new window | Button clicked | Page opens in a separate window | Pass |
 | Facebook link | Facebook should open in a new window | Link clicked | Page opens in a separate window | Pass |
 | Twitter link | Twitter should open in a new window | Link clicked | Page opens in a separate window | Pass |
-| Instagram link | Instagram should open in a new window | Link clicked | Page opens in a separate window | Pass |
+| Instagram link | Instagram should open in a new window | Link clicked | Page opens in a separate window | Pass
