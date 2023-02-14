@@ -138,7 +138,9 @@ Google Fonts was used for the following fonts:
 
 ### imagery
 
-No images present.
+The only `img` elements user are the loading GIF that disappear when crypto price is loaded.
+
+![GIF](docs/imagery-loadingGIF.jpg)
 
 ### Wireframes
 
