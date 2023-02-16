@@ -4,7 +4,7 @@
 let dots = document.querySelectorAll('.dots');
 let hiddenTexts = document.querySelectorAll('.hidden-text');
 let buttonMore = document.querySelectorAll('.read-more-button');
-let tabInfos = document.querySelectorAll('.tabs__tab ');
+let tabInfos = document.querySelectorAll('.singe-tab-content');
 
 
 /** 
@@ -21,11 +21,11 @@ function readMore() {
 
     if (dot.style.display === "none") {
       dot.style.display = "inline";
-      button.innerHTML = "Read more";
+      button.innerHTML = "Read more...";
       hiddenText.style.display = "none";
     } else {
       dot.style.display = "none";
-      button.innerHTML = "Read less";
+      button.innerHTML = "Hide text";
       hiddenText.style.display = "inline";
     }
   }
