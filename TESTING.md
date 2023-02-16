@@ -24,11 +24,21 @@ Testing progressed at every stage of this project. This ensured that most issues
 
 The [W3C validator](https://validator.w3.org/) was used to validate the HTML and CSS pages.
 
+* HTML Validation
+
+![HTML](docs/HTML-validation.jpg)
+
+* CSS Validation
+
 - - -
 
 ### JavaScript Validator
 
 [jshint](https://jshint.com/) was used to validate all JavaScript code on this page.
+
+* converter.js Validation
+
+* main.js Validation
 
 - - -
 
