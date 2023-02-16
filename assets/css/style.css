@@ -1,6 +1,7 @@
 /* import the font "Montserrat" from Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Asap&family=Crimson+Text&family=IBM+Plex+Sans&family=Space+Mono&display=swap');
 
+/* Sets margin & padding of the whole document to 0 */
 
 * {
     margin: 0;
@@ -21,7 +22,7 @@ nav {
     box-sizing: border-box;
 }
 
-/* Styles the buttons on the navigation menu, sets padding, and font family */
+/* Buttons - Padding, color */
 
 nav button {
     border: none;
@@ -31,7 +32,9 @@ nav button {
     color: inherit;
 }
 
-.navbar1 {
+/* NavBar - Position and colors */
+
+.navigation-bar {
     position: absolute;
     z-index: 1;
     top: 0;
@@ -45,6 +48,15 @@ nav button {
     background: #19191c;
     color: #f9f9f9;
 }
+
+/* Removes default underline blue color from logo */
+
+.navigation-bar>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Logo - Position, font & size */
 
 .navlogo {
     display: flex;
@@ -60,6 +72,8 @@ nav button {
     transition: 0.3s;
 }
 
+/* Buttons - Position, opacity & transition time on hover */
+
 .nav-buttons>button {
     position: relative;
     flex: 0 0 36px;
@@ -73,10 +87,14 @@ nav button {
     transition: 0.7s;
 }
 
+/* Buttons - Color change when hovered */
+
 .nav-buttons>button:hover {
     color: #FFFF33;
     opacity: 0.8;
 }
+
+/* Learn about crypto anchor - position, color */
 
 .nav-buttons>a {
     position: absolute;
@@ -94,12 +112,14 @@ nav button {
     transition: 0.7s;
 }
 
+/* Anchor hovered */
+
 .nav-buttons>a:hover {
     color: #FFFF33;
     opacity: 0.8;
 }
 
-/* Heading */
+/* Live prices - heading position, font and color */
 
 .convert-heading {
     text-align: center;
@@ -115,7 +135,8 @@ nav button {
 
 /* Live price container */
 
-/* centers the container and sets its colors */
+/* Centers the container and sets its color */
+
 .main {
     text-align: center;
     width: 80%;
@@ -125,6 +146,8 @@ nav button {
     border: none;
     background: #FFFDE6;
 }
+
+/* Crypto names - alignment, font, and color */
 
 .main h4 {
     width: 70%;
@@ -138,17 +161,22 @@ nav button {
     color: #19191C;
 }
 
+/* Price - font, size and alignment */
+
 .price {
     font-family: 'Crimson Text', serif;
     font-size: 1.4rem;
     padding-left: 6px;
 }
 
+/* Icons - alignment, color and size */
+
 .crypto-icons {
     padding-right: 6px;
     background: transparent;
     color: #eca200;
     transition: 0.6s;
+    font-size: 1.2rem;
 }
 
 .crypto-icons:hover {
@@ -167,6 +195,8 @@ nav button {
     color: #19191C;
 }
 
+/* Container - alignment, color and border */
+
 .btceur-convert {
     width: fit-content;
     margin: 0 auto;
@@ -182,7 +212,8 @@ nav button {
     font-size: 1.1rem;
 }
 
-.btceur-convert input, .btceur-convert span {
+.btceur-convert input,
+.btceur-convert span {
     font-family: 'Crimson Text', serif;
     font-size: 1.2rem;
     padding: 3px;
@@ -190,6 +221,8 @@ nav button {
 }
 
 /* The tabs menu */
+
+/* Tabs main heading - alignment, size and color */
 
 .tabs-heading {
     font-family: 'IBM Plex Sans', sans-serif;
@@ -200,35 +233,7 @@ nav button {
     text-transform: capitalize;
 }
 
-[data-tab-info] {
-    display: none;
-}
-
-.active[data-tab-info] {
-    display: block;
-}
-
-.tab-content {
-    background: #FFFDE6;
-    border: 1px solid #ffffff;
-    border-radius: 6px;
-    width: 80%;
-    margin: 30px auto;
-    height: auto;
-    padding: 24px;
-}
-
-.tabs__tab>h3 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: bold;
-}
-
-.tabs__tab>p {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #333;
-}
+/* Tabs - position, color & border */
 
 .tabs {
     width: fit-content;
@@ -239,6 +244,8 @@ nav button {
     border-radius: 6px;
     color: #19191C;
 }
+
+/* Tabs crypto abbreviations - alignment and font*/
 
 .tabs span {
     padding: 6px 10px;
@@ -253,6 +260,46 @@ nav button {
     cursor: pointer;
     background-color: #ddd;
 }
+
+/* Hides content without class "active" i.e. content that is not clicked */
+
+[data-tab-info] {
+    display: none;
+}
+
+/* Displays content when desired tab is clicked (JavaScript handles the click event) */
+
+.active[data-tab-info] {
+    display: block;
+}
+
+/* Selected Tab's content - Background color, position */
+
+.all-tabs-content {
+    background: #FFFDE6;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    width: 80%;
+    margin: 30px auto;
+    height: auto;
+    padding: 24px;
+}
+
+/* Heading & paragraph - Font & color */
+
+.singe-tab-content>h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+}
+
+.singe-tab-content>p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Read more button - Font, alignment, color and border removal */
 
 .read-more-button {
     display: block;
@@ -280,13 +327,15 @@ nav button {
 
 /* Definitions */
 
-.def-h1 {
+.def-heading {
     text-align: center;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 3rem;
     letter-spacing: 1.8px;
     color: #19191C;
 }
+
+/* Centers and adds background color to Definitions container */
 
 .def-container {
     width: 80%;
@@ -315,6 +364,8 @@ footer {
     margin-top: 66px;
 }
 
+/* Footer - position and alignment */
+
 .footer-container {
     display: flex;
     justify-content: flex-start;
@@ -328,6 +379,8 @@ footer {
     text-align: center;
     height: 90%;
 }
+
+/* Last column (social media) - position & alignment */
 
 .footer-column:last-child {
     position: relative;
@@ -347,13 +400,9 @@ footer {
     opacity: 0.5;
 }
 
-.footer-element {
-    padding: 12px 0;
-    text-align: left;
-    color: #f9f9f9;
-}
+/* First element in the column - alignment, border & font*/
 
-.footer-element1 {
+.footer-first-element {
     text-align: left;
     border-bottom: 1.5px solid #ddd;
     font-size: 1.3rem;
@@ -362,6 +411,16 @@ footer {
     font-weight: bolder;
     text-transform: uppercase;
 }
+
+/* Other footer content (below logo and headings)*/
+
+.footer-element {
+    padding: 12px 0;
+    text-align: left;
+    color: #f9f9f9;
+}
+
+/* Sets its font and color */
 
 .footer-element>a {
     font-family: 'IBM Plex Sans', sans-serif;
@@ -373,6 +432,8 @@ footer {
 .footer-element>a:hover {
     opacity: 0.5;
 }
+
+/* Media Queries */
 
 /* Centers the nav menu and adds right margin */
 
@@ -386,6 +447,8 @@ footer {
 
 @media only screen and (max-width: 430px) {
 
+    /* navbar */
+
     .navlogo {
         font-size: 1.2rem;
     }
@@ -394,16 +457,24 @@ footer {
         display: none;
     }
 
-    .main {
-        width: 85%;
-        padding: 0;
-    }
+    /* Live prices */
 
     .convert-heading {
         margin-top: 25%;
         font-size: 2rem;
         padding-bottom: 3%;
     }
+
+    .main {
+        width: 85%;
+        padding: 0;
+    }
+
+    .crypto-icons {
+        font-size: 1.1rem;
+    }
+
+    /* Convert section */
 
     .btceur-heading {
         font-size: 2rem;
@@ -418,26 +489,32 @@ footer {
         width: 30%;
     }
 
+    /* Tabs */
+
     .tabs-heading {
         margin-top: 15%;
         font-size: 2rem;
         padding-bottom: 3%;
     }
 
-    .tab-content {
+    .all-tabs-content {
         width: 85%;
     }
 
-    .def-h1 {
+    /* Definitions */
+
+    .def-heading {
         font-size: 2rem;
     }
+
+    /* Footer */
 
     .footer-container {
         flex-wrap: wrap;
         height: fit-content;
     }
 
-    .footer-element1 {
+    .footer-first-element {
         padding-top: 16px;
     }
 
@@ -445,6 +522,8 @@ footer {
         width: 100%;
         text-align: left;
     }
+
+    /* Positions footer social media icons */
 
     .footer-column:last-child {
         display: inline-flex;
@@ -455,11 +534,17 @@ footer {
     }
 }
 
+/* Tablet media queries */
+
 @media (max-width: 768px) and (min-width: 430px) {
+
+    /* navbar */
 
     .nav-buttons>a {
         display: none;
     }
+
+    /* Live prices */
 
     .main {
         padding: 0;
@@ -472,6 +557,8 @@ footer {
         text-align: left;
     }
 
+    /* Footer */
+
     .footer-container {
         flex-wrap: wrap;
         height: fit-content;
@@ -481,6 +568,8 @@ footer {
         width: 100%;
         text-align: left;
     }
+
+    /* Positions footer social media icons */
 
     .footer-column:last-child {
         display: inline-flex;
