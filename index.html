@@ -45,8 +45,8 @@
 
     <!-- Navigation bar -->
 
-    <nav class="navbar1">
-        <a href="index.html" style="text-decoration: none; color: #fff;">
+    <nav class="navigation-bar">
+        <a href="index.html">
             <h1 class="navlogo">CryptoSwap</h1>
         </a>
         <nav class="nav-buttons">
@@ -113,6 +113,8 @@
 
     <h1 id="Learn" class="tabs-heading">Learn about crypto</h1>
 
+    <!-- Clickable Tabs -->
+
     <div class="tabs">
         <span data-tab-value="#tab_1">BTC</span>
         <span data-tab-value="#tab_2">ETH</span>
@@ -121,8 +123,11 @@
         <span data-tab-value="#tab_5">ADA</span>
         <span data-tab-value="#tab_6">LTC</span>
     </div>
-    <div class="tab-content">
-        <div class="tabs__tab active" id="tab_1" data-tab-info>
+
+    <!-- Tab Content -->
+    
+    <div class="all-tabs-content">
+        <div class="singe-tab-content active" id="tab_1" data-tab-info>
             <h3>Bitcoin</h3>
             <p>Bitcoin is a decentralized digital currency that was created in 2009 by an unknown individual or group of
                 people using the pseudonym Satoshi Nakamoto. It allows for peer-to-peer transactions without the need
@@ -141,7 +146,7 @@
             <button onclick="readMore()" class="read-more-button">Read more...</button>
 
         </div>
-        <div class="tabs__tab" id="tab_2" data-tab-info>
+        <div class="singe-tab-content" id="tab_2" data-tab-info>
             <h3>Ethereum</h3>
             <p>Ethereum is a decentralized, open-source blockchain platform that enables the creation of smart contracts
                 and decentralized applications (dApps). It was first proposed in 2013 by Vitalik Buterin and officially
@@ -159,7 +164,7 @@
             </p>
             <button onclick="readMore()" class="read-more-button">Read more...</button>
         </div>
-        <div class="tabs__tab" id="tab_3" data-tab-info>
+        <div class="singe-tab-content" id="tab_3" data-tab-info>
             <h3>Binance</h3>
             <p>Binance Coin (BNB) is the native cryptocurrency of the Binance ecosystem, which includes the Binance
                 exchange and various other Binance-branded products and services. Binance is one of the largest
@@ -177,7 +182,7 @@
             </p>
             <button onclick="readMore()" class="read-more-button">Read more...</button>
         </div>
-        <div class="tabs__tab" id="tab_4" data-tab-info>
+        <div class="singe-tab-content" id="tab_4" data-tab-info>
             <h3>Ripple</h3>
             <p>Ripple (XRP) is a digital asset used to facilitate fast, low-cost international money transfers. Created
                 in 2012 by Ripple Labs, it enables instant and direct transfer of money between parties. It also reduces
@@ -195,7 +200,7 @@
             </p>
             <button onclick="readMore()" class="read-more-button">Read more...</button>
         </div>
-        <div class="tabs__tab" id="tab_5" data-tab-info>
+        <div class="singe-tab-content" id="tab_5" data-tab-info>
             <h3>Cardano</h3>
             <p>
                 Cardano (ADA) is a decentralized blockchain platform that was created to address the scalability,
@@ -213,7 +218,7 @@
             </p>
             <button onclick="readMore()" class="read-more-button">Read more...</button>
         </div>
-        <div class="tabs__tab" id="tab_6" data-tab-info>
+        <div class="singe-tab-content" id="tab_6" data-tab-info>
             <h3>Litecoin</h3>
             <p>Litecoin (LTC) is a peer-to-peer cryptocurrency that was created in 2011 as a lightweight alternative to
                 Bitcoin. It was one of the first cryptocurrencies to use the Scrypt algorithm, which is designed to be
@@ -235,7 +240,7 @@
 
     <!-- Definitions section -->
 
-    <h1 class="def-h1">Definitions</h1>
+    <h1 class="def-heading">Definitions</h1>
     <div class="def-container">
         <div class="row definitions-div">
             <p><strong>Blockchain Technology:</strong> A decentralized and distributed digital ledger that records all
@@ -280,9 +285,12 @@
                 <div class="footer-element"><a href="https://pro.coinbase.com/" target="_blank">Coinbase</a></div>
             </div>
             <div class="footer-column">
-                <a href="https://www.facebook.com/" target="_blank" aria-label="Visit our Facebook page"><i class="fa fa-facebook footer-icons"></i></a>
-                <a href="https://www.twitter.com/" target="_blank" aria-label="Visit our Twitter page"><i class="fa fa-twitter footer-icons"></i></a>
-                <a href="https://www.instagram.com/" target="_blank" aria-label="Visit our instagram page"><i class="fa fa-instagram footer-icons"></i></a>
+                <a href="https://www.facebook.com/" target="_blank" aria-label="Visit our Facebook page"><i
+                        class="fa fa-facebook footer-icons"></i></a>
+                <a href="https://www.twitter.com/" target="_blank" aria-label="Visit our Twitter page"><i
+                        class="fa fa-twitter footer-icons"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Visit our instagram page"><i
+                        class="fa fa-instagram footer-icons"></i></a>
             </div>
         </div>
     </footer>
