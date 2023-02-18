@@ -30,6 +30,8 @@ The [W3C validator](https://validator.w3.org/) was used to validate the HTML and
 
 * CSS Validation
 
+![CSS](docs/CSS-validation.jpg)
+
 - - -
 
 ### JavaScript Validator
