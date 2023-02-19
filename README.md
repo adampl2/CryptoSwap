@@ -269,7 +269,7 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 
 * [Favicon.io](https://favicon.io/) To create favicon.
 
-* [loading.io](https://loading.io/) To create loading GIF.
+* [icons8.com](https://icons8.com/preloaders/en/search/loading) To create loading GIF.
 
 * [Crypto coins](https://www.npmjs.com/package/cryptocoins-icons) To generate Crypto Icons.
 
