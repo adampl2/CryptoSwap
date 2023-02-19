@@ -40,7 +40,11 @@ The [W3C validator](https://validator.w3.org/) was used to validate the HTML and
 
 * converter.js Validation
 
+  * [`converter.js`](docs/converterjs-validation.jpg) - No errors, 24 warnings all relating to ES6 availability.
+
 * main.js Validation
+
+  * [`main.js`](docs/mainjs-validation.jpg) - No errors, 14 warnings all relating to ES6 availability.
 
 - - -
 
