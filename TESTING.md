@@ -50,9 +50,15 @@ The [W3C validator](https://validator.w3.org/) was used to validate the HTML and
 
 ### Lighthouse
 
+Lower score on *Bad Practices* was mainly attributed to the loading image being low quality. I had to re-size it to fit its purpose, hence the lower quality.
+
 ### Desktop
 
+![Desktop](docs/desktop-lighthouse.jpg)
+
 ### Mobile
+
+![Mobile](docs/mobile-lighthouse.jpg)
 
 - - -
 
