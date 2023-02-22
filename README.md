@@ -285,6 +285,10 @@ Please refer to [TESTING.md](TESTING.md) file for full testing procedure.
 
 2. The input field in the BTC/EUR convert section did not have a character limit, and did not inform the user that it must be a number & <= 21000000. Firstly, I have changed its type to `type="text"` which allowed me to specify max length using `maxlength="10"` attribute. Secondly, I added an *if* statement to the js file that informs the user that input must be a number and cannot be greater than 21000000.
 
+3. In order to convert btc to eur, the live btc price must load first, therefore, when user entered btc amount in the input field before btc live price is visible, the EUR span element would display "NaN". This is not a good user experience, therefore, I decided to disable the btc input field until btc live price is loaded.
+
+4. "onerror" and "onclose" fixes. I decided that it would be a better idea call handlePrice() each time there is an error to refresh the websocket automatically instead having to refresh the page.
+
 - - -
 
 ## Deployment & Local Development
