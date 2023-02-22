@@ -9,10 +9,6 @@ let ltc = document.getElementById("litecoin");
 
 /** Stores the currency pairs to avoid calling the handlePrice 6 times. */
 
-let cryptoRates = {
-  "bitcoin": 0
-};
-
 const CRYPTOS_ARRAY = [{
     currency_pair: "etheur",
     crypto: eth
@@ -20,7 +16,6 @@ const CRYPTOS_ARRAY = [{
   {
     currency_pair: "btceur",
     crypto: btc,
-    rates_key: "bitcoin"
   },
   {
     currency_pair: "bnbeur",
@@ -62,21 +57,22 @@ function handlePrice(currency_pair, crypto, rates_key) {
     crypto.innerText = price;
     crypto.style.color = !lastPrice || lastPrice === price ? 'black' : price > lastPrice ? 'green' : 'red';
     lastPrice = price;
-    cryptoRates[rates_key] = price;
+
+    if (currency_pair === 'btceur') {
+      document.getElementById('btcAmount').disabled = false;
+    }
   };
 
   webSocket.onclose = (event) => {
     crypto.innerText = `Error for ${currency_pair}, ${event.reason}`;
+    handlePrice(currency_pair, crypto);
   };
 
   webSocket.onerror = (error) => {
     crypto.innerText = `Error for ${currency_pair}, ${error.message}`;
+    handlePrice(currency_pair, crypto);
   };
 }
-
-/** handlePrice will execute every 5 seconds using the setInterval JS function */
-
-setInterval(handlePrice, 10 * 500);
 
 /** Converts any btc amount to eur */
 
@@ -109,10 +105,14 @@ function calculateConversion() {
 
 /** Iterates the cryptoArray and calls the handlePrice function */
 
-CRYPTOS_ARRAY.forEach(({
-  currency_pair,
-  crypto,
-  rates_key
-}) => handlePrice(currency_pair, crypto, rates_key));
+function initializeApp() {
+  document.getElementById("btcAmount").disabled = true;
+  document.getElementById("btcAmount").addEventListener("input", calculateConversion);
+  CRYPTOS_ARRAY.forEach(({
+    currency_pair,
+    crypto
+  }) => handlePrice(currency_pair, crypto));
 
-addEventListener('DOMContentLoaded', handlePrice, calculateConversion);
+}
+
+addEventListener('DOMContentLoaded', initializeApp);
