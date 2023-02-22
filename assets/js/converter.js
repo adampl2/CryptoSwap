@@ -47,7 +47,7 @@ const CRYPTOS_ARRAY = [{
  * Returns error message when one is encountered both in the console and to inform user.
  */
 
-function handlePrice(currency_pair, crypto, rates_key) {
+function handlePrice(currency_pair, crypto) {
   let webSocket = new WebSocket(`wss://stream.binance.com:9443/ws/${currency_pair}@trade`);
   let lastPrice = null;
 
