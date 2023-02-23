@@ -324,6 +324,14 @@ Clone the CryptoSwap repository:
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
+#### Running the Project
+
+1. Once located in the CryptoSwap repository, click on the green gitpod button located on the right-hand side of the screen.
+2. Once workspace opens, enter `python3 -m http.server` command in the terminal.
+3. A pop-up window will appear. Click on "Make Public" to expose the server on a public URL.
+4. Open a new browser window and navigate to the URL provided by Gitpod to view the website.
+5. Use the website as intended and ensure that all features are functioning correctly.
+
 - - -
 
 ## Credits
