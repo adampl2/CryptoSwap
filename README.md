@@ -2,6 +2,8 @@
 
 Stay informed on cryptocurrency trends with CryptoSwap, a simple platform for live pricing information. View up-to-date values for six popular cryptocurrencies, displayed in euros for ease of use.
 
+**Important** Crypto prices might not display when VPN is used.
+
 **New Feature** Convert any Bitcoin amount to Euros (EUR)!
 
 Developed as part of a milestone project 2 for Code Institute, CryptoSwap offers a compact resource for crypto enthusiasts and those looking to learn more. Get a glimpse into the dynamic world of cryptocurrency with CryptoSwap.
